@@ -129,7 +129,7 @@ header__theme-menu-button:focus-visible {
 }
 
 .header__text {
-    color: var(--heading-color);
+    color: var(--header-title-text-color);
     line-height: 82.5%;
     text-shadow: 4px 4px 0px var(--text-color-highlight);
 }

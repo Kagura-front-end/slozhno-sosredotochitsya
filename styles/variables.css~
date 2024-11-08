@@ -14,4 +14,7 @@
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
 }
-
+@media (width >= 668px) {
+    :root {
+    }
+}
