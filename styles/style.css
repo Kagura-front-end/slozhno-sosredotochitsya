@@ -19,7 +19,7 @@
     padding: 10px;
 }
 
-.rec-decoration {
+.rec-symbol {
     position: absolute;
     top: 10px;
     right: 19px;
@@ -31,7 +31,7 @@
     font-size: 18px;
 }
 
-.rec-decoration::after {
+.rec-symbol::after {
     content: "";
     display: block;
     width: 10px;
@@ -87,7 +87,7 @@
     min-inline-size: 70px;
 }
 
-header__theme-menu-button:hover {
+.header__theme-menu-button:hover {
     border: var(--border-style__hover);
     border-block-end: 1px solid transparent;
     color: var(--text-color-highlight);
@@ -99,7 +99,7 @@ header__theme-menu-button:hover {
     min-inline-size: 70px;
 }
 
-header__theme-menu-button:focus {
+.header__theme-menu-button:focus {
     border: var(--border-style__hover);
     border-block-end: 1px solid transparent;
     color: var(--text-color-highlight);
@@ -111,7 +111,7 @@ header__theme-menu-button:focus {
     min-inline-size: 70px;
 }
 
-header__theme-menu-button:focus-visible {
+.header__theme-menu-button:focus-visible {
     border: var(--border-style__hover);
     border-block-end: 1px solid transparent;
     color: var(--text-color-highlight);
@@ -124,14 +124,15 @@ header__theme-menu-button:focus-visible {
 }
 
 .header__theme-menu-button_active {
-    border: var{--border-style__hover};
+    border: var(--border-style__hover);
     cursor: pointer;
 }
 
-.header__text {
+.page-title {
     color: var(--heading-color);
     line-height: 82.5%;
     text-shadow: 4px 4px 0px var(--text-color-highlight);
+    font-size: clamp(2rem, 8vw, 116px);
 }
 
 
