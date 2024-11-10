@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 
 .page {
     background-color: var(--background-color);
@@ -132,14 +135,14 @@
 
 .page-title {
     color: var(--heading-color);
-    text-shadow: 4px 4px 0px var(--text-color-highlight);
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 83.5%;
+    text-shadow: 4px 4px 0px var(--text-color-highlight);
+    word-spacing: 0.2rem;
 }
 
 .header__title {
@@ -152,12 +155,13 @@
     background: var(--highlighted-area, #ff0070);
 }
 
-h2:not(:last-of-type) {
+h2:not(.pictures__title):not(.footer__title) {
     color: var(--text-color-highlight, #ff0070);
     font-size: var(--font-size);
     line-height: var(--line-height);
     font-weight: var(--font-weight-bold, 700px);
     text-align: left;
+    margin: 50px 20px 10px 10px;
 }
 
 h3, h4 {
@@ -169,6 +173,10 @@ h3, h4 {
     text-align: left;
 }
 
+h4 {
+    margin: 20px 10px 10px 10px;
+}
+
 p {
     color: var(--text-color-main, #f1b2ce);
     font-size: var(--font-size);
@@ -177,12 +185,32 @@ p {
     text-align: left;
 }
 
-/*
-h2:last-of-type {
-    font-width: var(--font-weight-bold, 700px);
-    color: var(--text-color-highlight, #ff0070);
-    text-transform: bold;
-    font-size: var(--font-size);*/
+.main a {
+    border: 1px solid transparent;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 var(--text-color-highlight);
+}
+
+.main a:hover {
+    border-bottom: 1px solid currentColor;
+}
+
+.main a:focus {
+    outline: none;
+}
+
+.main a:focus-visible {
+    border: 1px solid var(--text-color-main, #f1b2ce);
+}
+
+.pictures__title {
+color: var(--text-color-transparent, #000028);
+background-color: var(--highlighted-area, #ff0070);
+font-size: var(--font-size);
+line-height: var(--line-height);
+font-weight: var(--font-weight-bold, 700px);
+text-align: left;
+margin: 50px 10px 10px 10px;
 }
 
 .pictures__cards {
