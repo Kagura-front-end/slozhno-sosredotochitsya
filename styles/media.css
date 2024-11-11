@@ -1,0 +1,17 @@
+@media (width >= 1024px) {
+    .two-column {
+        max-width: 314px;
+    }
+}
+
+@media (width > 768px) {
+    .one-column {
+        max-width: 648px;
+    }
+}
+
+@media (425px < width <= 768px) {
+    .one-column {
+        max-width: 472px;
+    }
+}
