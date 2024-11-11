@@ -9,11 +9,9 @@
     --font-family: 'IBM Plex Mono', sans-serif;
     --font-size: 18px;
     --line-height: 1.4625rem;
-    --font-weight-bold: 700px;
-    --font-weight-normal: 400px;
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
-    --padding: 10px;
 }
-
 

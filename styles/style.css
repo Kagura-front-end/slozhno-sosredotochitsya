@@ -141,7 +141,7 @@ body {
     text-decoration-skip-ink: none;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     line-height: 83.5%;
-    text-shadow: 4px 4px 0px var(--text-color-highlight);
+    text-shadow: 4px 4px 0 var(--text-color-highlight);
     word-spacing: 0.2rem;
 }
 
@@ -159,7 +159,7 @@ h2:not(.pictures__title):not(.footer__title) {
     color: var(--text-color-highlight, #ff0070);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    font-weight: var(--font-weight-bold, 700px);
+    font-weight: var(--font-weight-bold);
     text-align: left;
     margin: 50px 20px 10px 10px;
 }
@@ -169,7 +169,7 @@ h3, h4 {
     background-color: var(--highlighted-area, #ff0070);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    font-weight: var(--font-weight-bold, 700px);
+    font-weight: var(--font-weight-bold);
     text-align: left;
 }
 
@@ -181,7 +181,7 @@ p {
     color: var(--text-color-main, #f1b2ce);
     font-size: var(--font-size);
     line-height: var(--line-height);
-    font-weight: var(--font-weight-normal, 400px);
+    font-weight: var(--font-weight-normal);
     text-align: left;
 }
 
@@ -208,7 +208,7 @@ color: var(--text-color-transparent, #000028);
 background-color: var(--highlighted-area, #ff0070);
 font-size: var(--font-size);
 line-height: var(--line-height);
-font-weight: var(--font-weight-bold, 700px);
+font-weight: var(--font-weight-bold);
 text-align: left;
 margin: 50px 10px 10px 10px;
 }
@@ -241,7 +241,7 @@ margin: 50px 10px 10px 10px;
     grid-row: 2;
     justify-self: center;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    font-weight: var(--font-weight-bold, 700px);
+    font-weight: var(--font-weight-bold);
     color: var(--heading-color, #db00ff);
-    text-shadow: 4px 4px 0px var(--text-color-highlight, #ff0070);
+    text-shadow: 4px 4px 0 var(--text-color-highlight, #ff0070);
 }
