@@ -56,20 +56,20 @@ a {
 .header {
   position: relative;
   display: grid;
-  grid-template-rows: 1fr min-content 1fr;
-  align-items: center;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: start;
   height: 100vh;
-  gap: 10px;
   color: var(--highlighted-area);
   font-size: var(--font-size);
 }
 
 .rec-symbol {
-  Position: absolute;
+  Position: relative;
   display: flex;
   justify-content: end;
   align-items: center;
   font-size: 18px;
+}
 
   .header__theme-menu-list {
     display: flex;
@@ -95,9 +95,8 @@ a {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     font-size: var(--title-size);
-    line-height: 83.5%;
     text-shadow: 4px 4px 0 var(--text-color-highlight);
-    word-spacing: 0.2rem;
+  }
 
     .header__title {
       color: var(--text-color-transparent);
@@ -106,6 +105,7 @@ a {
       font-size: inherit;
       line-height: inherit;
       background: var(--highlighted-area);
+      line-height: var(--line-height);
     }
 
     h2:not(.pictures__title):not(.footer__title) {
@@ -122,7 +122,7 @@ a {
       font-size: var(--font-size);
       line-height: var(--line-height);
       font-weight: var(--font-weight-bold);
-
+    }
 
       p {
         color: var(--text-color-main);
