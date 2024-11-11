@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0 auto;
-    max-width: 375px;
+    min-width: 375px;
     box-sizing: border-box;
 }
 
