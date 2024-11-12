@@ -158,16 +158,16 @@
 
     .article-container {
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: 45% auto;
     }
 
     .title-question {
         grid-column: 1 / 2;
-        width: 30%;
+        width: 60%;
     }
 
     .one-column {
-        grid-column: 2 / 4;
+        grid-column: 2 / 3;
         width: 100%;
     }
 
