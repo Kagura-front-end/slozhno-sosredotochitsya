@@ -4,13 +4,15 @@
     --heighlighted-area: #FF0070;
     --text-color-highlight: #FF0070;
     --heading-color: #DB00FF;
-
+    --line-height: 1.463rem;
+    --font-weight-bold: 700;
+    --font-size: 18px;
     --text-color-main: #F1B2CE;
+
     --text-color-transparent: #000028;
     --shadow: #FF0070;
 
-    --line-height: 1.463rem;
-    --font-weight-bold: 700;
+
     --font-weight-normal: 400;
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);

@@ -1,5 +1,5 @@
 @import url(../styles/media/1024px.css);
-/* Page */
+
 .page {
     background-color: var(--background-color);
     background-image: var(--background);
@@ -12,7 +12,6 @@
 
 }
 
-/* Header */
 .header {
     position: relative;
     display: grid;

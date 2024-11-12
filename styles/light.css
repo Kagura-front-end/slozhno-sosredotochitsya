@@ -5,12 +5,12 @@
     --text-color-highlight: #353430;
     --heading-color: #FFC2E6;
     --line-height: 1.4625rem;
-
     --text-color-main: #353430;
+
     --text-color-transparent: #353430;
     --shadow: #FF0070;
-    --font-weight-bold: 700px;
-    --font-weight-normal: 400px;
+/*    --font-weight-bold: 700px;
+    --font-weight-normal: 400px;*/
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
 }
@@ -29,14 +29,14 @@
             --text-color-highlight: var(--text-color-highlight, #353430);
             --heading-color: var(--heading-color, #FFC2E6);
             --line-height: var(--line-height, 1.4625rem);
-
             --text-color-main: var(--text-color-main, #353430);
+
             --text-color-transparent: var(--text-color-transparent, #353430);
             --shadow: var(--shadow, #FF0070);
-            --font-family: 'IBM Plex Mono', sans-serif;
+/*            --font-family: 'IBM Plex Mono', sans-serif;
             --font-size: 18px;
             --font-weight-bold: 700px;
-            --font-weight-normal: 400px;
+            --font-weight-normal: 400px;*/
             --border-style: 1px solid #ff0070;
             --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
         }
