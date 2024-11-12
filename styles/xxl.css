@@ -1,15 +1,15 @@
-
-@media (768px <= width <= 1023px) {
+@media (1023px <= width) {
     .page {
-        width: 768px;
+        width: 1024px;
     }
 
     .header {
-        max-height: 1024px;
-        margin: 20px;
+        min-height: 768px;
+        min-width: 1024px;
+        padding: 20px;
     }
 
-   .rec-symbol {
+    .rec-symbol {
         right: 10px;
     }
 
@@ -171,7 +171,7 @@
     }
 
     .dense-title {
-    grid-column: 1 / 2; grid-row: 1;
+        grid-column: 1 / 2; grid-row: 1;
         width: 25%
     }
 
