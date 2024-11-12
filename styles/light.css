@@ -8,7 +8,7 @@
     --background-color: #FFF1F7;
     --background: url("../images/cover-image-light.png");
     --text-color-main: #353430;
-    --text-color-highlight: #353430;
+    --text-color-highlight: #FF8DCB;
     --text-color-transparent: #353430;
     --shadow: #FF0070;
     --highlighted-area: #FF8DCB;
@@ -26,7 +26,7 @@
         :root {
             --background-color: var(--background-color, #fff1f7);
             --text-color-main: var(--text-color-main, #353430);
-            --text-color-highlight: var(--text-color-highlight, #353430);
+            --text-color-highlight: var(--text-color-highlight, #FF8DCB);
             --text-color-transparent: var(--text-color-transparent, #353430);
             --shadow: var(--shadow, #FF0070);
             --highlighted-area: var(--highlighted-area, #FF8DCB);
@@ -40,3 +40,10 @@
             --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
         }
 }
+
+@media (prefers-color-scheme: light) {
+    .rec-symbol {
+        display: none;
+    }
+}
+
