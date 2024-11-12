@@ -99,6 +99,28 @@
     font-weight: var(--font-weight-bold);
 }
 
+.pictures__cards img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    align-self: center;
+}
+
+.footer__title {
+    margin: 0;
+    grid-row: 2;
+    justify-self: center;
+    font-weight: var(--font-weight-bold);
+    color: var(--heading-color);
+    text-shadow: 4px 4px 0 var(--text-color-highlight);
+}
+
 @media (425px < width <= 767px) {
     .page {
         min-width: 375px;

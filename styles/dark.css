@@ -16,6 +16,7 @@
     --heading-color: #DB00FF;
     --line-height: 1.4625rem;
     --text-color-main: #F1B2CE;
+    --text-color-transparent: #000028;
 
 }
 
@@ -28,6 +29,7 @@
         --heading-color: var(--heading-color, #DB00FF);
         --line-height: var(--line-height, 1.4625rem);
         --text-color-main: var(--text-color-main, #F1B2CE);
+        --text-color-transparent: var(--text-color-transparent, #000028);
 
     }
 }
