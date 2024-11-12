@@ -43,26 +43,9 @@ a {
   line-height: inherit;
 }
 
-.page {
-  background-color: var(--background-color);
-  /*background-image: url(../images/cover-image-dark.png);*/
-  background-image: var(--background);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0 auto;
-}
 
-.header {
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  align-items: start;
-  height: 100vh;
-  color: var(--highlighted-area);
-  font-size: var(--font-size);
-}
+
+
 
 .rec-symbol {
   Position: relative;

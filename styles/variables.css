@@ -1,14 +1,16 @@
 :root {
     --background-color: #000028;
     --background: url("../images/cover-image.png");
+    --heighlighted-area: #FF0070;
+
+
     --text-color-main: #F1B2CE;
     --text-color-highlight: #FF0070;
     --text-color-transparent: #000028;
     --shadow: #FF0070;
     --highlighted-area: #ff0070;
     --heading-color: #DB00FF;
-    --font-family: 'IBM Plex Mono', sans-serif;
-    --font-size: 18px;
+
     --line-height: 1.463rem;
     --font-weight-bold: 700;
     --font-weight-normal: 400;
