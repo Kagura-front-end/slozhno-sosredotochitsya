@@ -1,5 +1,6 @@
 :root {
     --background-color: #000028;
+    --background: url("../images/cover-image.png");
     --text-color-main: #F1B2CE;
     --text-color-highlight: #FF0070;
     --text-color-transparent: #000028;
