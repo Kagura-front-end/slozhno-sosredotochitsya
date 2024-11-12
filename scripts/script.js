@@ -1,4 +1,5 @@
 const themeButtons = document.querySelectorAll('.header__theme-menu-button');
+//console.log(themeButtons);
 
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {

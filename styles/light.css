@@ -3,9 +3,10 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-/*
+
 .page.theme_light {
-    --background-color: #fff1f7;
+    --background-color: #FFF1F7;
+    --background: url("../images/cover-image-light.png");
     --text-color-main: #353430;
     --text-color-highlight: #353430;
     --text-color-transparent: #353430;
@@ -39,4 +40,3 @@
             --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
         }
 }
-*/

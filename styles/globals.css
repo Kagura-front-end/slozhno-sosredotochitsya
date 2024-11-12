@@ -45,7 +45,8 @@ a {
 
 .page {
   background-color: var(--background-color);
-  background-image: url(../images/cover-image-dark.png);
+  /*background-image: url(../images/cover-image-dark.png);*/
+  background-image: var(--background);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

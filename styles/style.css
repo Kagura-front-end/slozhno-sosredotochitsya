@@ -1,3 +1,5 @@
+@import url(../styles/media/1024px.css);
+
 @media (425px < width <= 767px) {
     .page {
         min-width: 375px;
