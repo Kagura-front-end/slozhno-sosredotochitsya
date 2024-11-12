@@ -8,6 +8,7 @@
     --text-color-highlight: #FF0070;
     --text-color-transparent: #000028;
     --shadow: #FF0070;
+    --highlighted-area: #ff0070;
     --heading-color: #DB00FF;
 
     --line-height: 1.463rem;
