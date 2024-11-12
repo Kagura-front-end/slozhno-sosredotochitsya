@@ -7,15 +7,19 @@
         min-height: 768px;
         min-width: 1024px;
         padding: 20px;
-        grid-template-columns: 0;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "top-row"
+        "second-row"
+        "third-row";
     }
 
     .rec-symbol {
         position: relative;
         justify-self: end;
         align-self: start;
-        grid-row: 1;
         right: 10px;
+        grid-area: top-row;
     }
 
     .rec-symbol::after {
@@ -56,9 +60,9 @@
     }
 
     .header__theme-menu {
-        justify-self: center; 
+        justify-self: center;
         align-self: start;
-        grid-row: 1;
+        grid-area: top-row;
     }
 
     .header__theme-menu-list {
