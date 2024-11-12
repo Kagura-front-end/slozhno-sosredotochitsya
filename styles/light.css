@@ -2,13 +2,13 @@
     --background-color: #FFF1F7;
     --background: url("../images/cover-image-light.png");
     --highlighted-area: #FF8DCB;
-
-    --text-color-main: #353430;
     --text-color-highlight: #353430;
-    --text-color-transparent: #353430;
-    --shadow: #FF0070;
     --heading-color: #FFC2E6;
     --line-height: 1.4625rem;
+
+    --text-color-main: #353430;
+    --text-color-transparent: #353430;
+    --shadow: #FF0070;
     --font-weight-bold: 700px;
     --font-weight-normal: 400px;
     --border-style: 1px solid #ff0070;
@@ -26,15 +26,15 @@
             --background-color: var(--background-color, #fff1f7);
             --background: var(--background, "../images/cover-image-light.png");
             --highlighted-area: var(--highlighted-area, #FF8DCB);
+            --text-color-highlight: var(--text-color-highlight, #353430);
+            --heading-color: var(--heading-color, #FFC2E6);
+            --line-height: var(--line-height, 1.4625rem);
 
             --text-color-main: var(--text-color-main, #353430);
-            --text-color-highlight: var(--text-color-highlight, #353430);
             --text-color-transparent: var(--text-color-transparent, #353430);
             --shadow: var(--shadow, #FF0070);
-            --heading-color: var(--heading-color, #FFC2E6);
             --font-family: 'IBM Plex Mono', sans-serif;
             --font-size: 18px;
-            --line-height: 1.4625rem;
             --font-weight-bold: 700px;
             --font-weight-normal: 400px;
             --border-style: 1px solid #ff0070;

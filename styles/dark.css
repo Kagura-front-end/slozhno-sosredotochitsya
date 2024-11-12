@@ -12,10 +12,14 @@
     --background-color: #000028;
     --background: url("../images/cover-image-dark.png");
     --highlighted-area: #FF0070;
+    --text-color-highlight: #FF0070;
+    --heading-color: #DB00FF;
+    --line-height: 1.4625rem;
+;
 
     --text-back: #FF0070;
     --text-color: #F1B2CE;
-    --title-color: #DB00FF;
+
     --title-text-color: #000028;
     --focus-title: #FF0070;
     --rec-border: #FF0070;
@@ -34,6 +38,9 @@
         --background-color: var(--background-color, #000028);
         --back-image: var(--background, "../images/cover-image-dark.png");
         --highlighted-area: var(--highlighted-area, #FF0070);
+        --text-color-highlight: var(--text-color-highlight, #FF0070);
+        --heading-color: var(--heading-color, #DB00FF);
+        --line-height: var(--line-height, 1.4625rem);
 
         --text-back: #FF0070;
         --text-color: #F1B2CE;

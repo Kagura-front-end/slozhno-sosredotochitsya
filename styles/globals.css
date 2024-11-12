@@ -49,42 +49,13 @@ a {
 
 
 
-  .header__theme-menu-list {
-    display: flex;
-    gap: 12px;
-  }
 
-  .header__theme-menu-button {
-    border: none;
-    text-align: center;
-    border-block-end: 1px solid transparent;
-    color: var(--text-color-highlight);
-    font-size: 18px;
-    text-transform: lowercase;
-    background-color: transparent;
-    cursor: pointer;
-    line-height: 1.125rem;
-  }
 
-  .page-title {
-    color: var(--heading-color);
-    font-weight: bold;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    font-size: var(--title-size);
-    text-shadow: 4px 4px 0 var(--text-color-highlight);
-  }
 
-    .header__title {
-      color: var(--text-color-transparent);
-      font-family: 'IBM Plex Mono', monospace, sans-serif;
-      font-weight: 700;
-      font-size: inherit;
-      line-height: inherit;
-      background: var(--highlighted-area);
-      line-height: var(--line-height);
-    }
+
+
+
+
 
     h2:not(.pictures__title):not(.footer__title) {
       color: var(--text-color-highlight);
