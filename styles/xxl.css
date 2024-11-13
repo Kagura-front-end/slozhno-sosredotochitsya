@@ -129,7 +129,7 @@
         grid-area: third-row;
     }
 
-    h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question){
+    h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question) {
         margin: 30px 20px 0px 0px;
     }
 
@@ -159,7 +159,7 @@
     }
 
     .hyphen {
-    letter-spacing: 0;
+        letter-spacing: 0;
     }
 
     .p-tall {
@@ -279,5 +279,5 @@
         line-height: 6.188rem;
         letter-spacing: 0.05em;
         transform: scaleX(1.2);
-}
+    }
 }
