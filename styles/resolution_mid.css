@@ -9,7 +9,6 @@
 
     .header {
         max-height: 1024px;
-        /*margin: 20px;*/
     }
 
     .rec-symbol {
@@ -57,31 +56,29 @@
 
     .header__theme-menu {
         justify-self: end;
-        margin-block: 65px;
         color: var(--text-color-highlight);
+        margin-top: 148px;
+
     }
 
     .header__theme-menu-list {
         flex-direction: column;
-        margin-top: 82px;
+        gap: 10px;
     }
 
+
     .header__theme-menu-button {
-        min-inline-size: 70px;
-        letter-spacing: 0.1em;
-        padding: 3px 13px;
+        min-inline-size: 68px;
+        letter-spacing:0.05em;
+        padding: 3px 11px;
+        font-weight: var(--font-weight-normal);
+        line-height: 18px;
     }
 
     .header__theme-menu-button:hover {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
-        color: var(--text-color-highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
+
+        min-inline-size: 68px;
+        border: var(--border-style);
     }
 
     .header__theme-menu-button:focus {
@@ -93,7 +90,7 @@
         text-transform: lowercase;
         background-color: transparent;
         cursor: pointer;
-        min-inline-size: 70px;
+        min-inline-size: 68px;
     }
 
     .header__theme-menu-button:focus-visible {
@@ -105,7 +102,7 @@
         text-transform: lowercase;
         background-color: transparent;
         cursor: pointer;
-        min-inline-size: 70px;
+        min-inline-size: 68px;
     }
 
     .header__theme-menu-button_active {
