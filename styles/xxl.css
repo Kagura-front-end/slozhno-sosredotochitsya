@@ -130,8 +130,8 @@
         grid-area: third-row;
     }
 
-    h2:not(.pictures__title):not(.footer__title):not(.title-question){
-        margin: 50px 20px 10px 10px;
+    h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question){
+        margin: 30px 20px 0px 0px;
     }
 
     h3, h4 {
@@ -139,18 +139,24 @@
     }
 
     h3 {
-        margin: 10px auto;
+        margin-bottom: 10px;
     }
+
 
     h4 {
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
+    .dophamine-title {
+        margin: 10px 0px 10px 0px;
+    }
+
     p:not(.header__title) {
         text-align: left;
         letter-spacing: 0.13em;
         font-weight: var(--font-weight-normal);
+        margin-bottom: 10px;
     }
 
     .hyphen {
@@ -185,7 +191,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        letter-spacing: 0.1em
+        letter-spacing: 0.1em;
+        padding: var(--padding-desktop)
     }
 
     .dense-title {
@@ -205,7 +212,7 @@
     }
 
     .golden-fish-question {
-        width: 60%;
+        width: 80%;
     }
 
 
