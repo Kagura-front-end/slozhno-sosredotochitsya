@@ -117,7 +117,7 @@
         grid-area: third-row;
     }
 
-    h2:not(.pictures__title):not(.footer__title) {
+    h2:not(.pictures__title):not(.footer__title):not(.title-question){
         margin: 50px 20px 10px 10px;
     }
 
@@ -139,13 +139,17 @@
     }
 
     .article-container {
+        margin-top: 40px;
         display: grid;
-        grid-template-columns: 45% auto;
+        grid-template-columns: auto 65.8%;
+        align-items: start;
+        padding: 20px;
     }
 
     .title-question {
         grid-column: 1 / 2;
-        width: 60%;
+        width: 85%;
+        letter-spacing: 0.1em;
     }
 
     .one-column {
