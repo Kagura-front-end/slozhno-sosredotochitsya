@@ -1,4 +1,4 @@
-@media (375px <= width /*<= 767px */) {
+@media (375px <= width <= 767px) {
 
     .page {
         max-width: 375px;
