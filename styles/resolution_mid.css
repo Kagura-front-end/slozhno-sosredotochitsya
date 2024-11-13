@@ -3,12 +3,18 @@
     .page {
         min-width: 768px;
         max-width: 990px;
-        padding-top: 20px;
+        margin-top: 20px;
         padding-right: 20px;
     }
 
     .header {
         max-height: 1024px;
+        grid-template-rows: 50px 244px 272px 394px 34px;
+        align-items: start;
+    }
+
+    .decorated-zone::after {
+        margin-left: 20px;
     }
 
     .rec-symbol {
@@ -28,37 +34,10 @@
         margin-left: 10px;
     }
 
-    .decorated-zone {
-        position: relative;
-    }
-
-    .decorated-zone::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 25px;
-        height: 25px;
-        border-inline-end: 1px solid var(--highlighted-area);
-        border-block-start: 1px solid var(--highlighted-area);
-    }
-
-    .decorated-zone::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        border-inline-start: 1px solid var(--highlighted-area);
-        border-block-end: 1px solid var(--highlighted-area);
-    }
-
     .header__theme-menu {
         justify-self: end;
         color: var(--text-color-highlight);
-        margin-top: 148px;
-
+        margin-top: 122px;
     }
 
     .header__theme-menu-list {
@@ -69,14 +48,13 @@
 
     .header__theme-menu-button {
         min-inline-size: 68px;
-        letter-spacing:0.05em;
+        letter-spacing: 0.05em;
         padding: 3px 11px;
         font-weight: var(--font-weight-normal);
         line-height: 18px;
     }
 
     .header__theme-menu-button:hover {
-
         min-inline-size: 68px;
         border: var(--border-style);
     }
@@ -112,8 +90,7 @@
 
     .page-title {
         font-size: var(--title-size);
-        margin-top: 178px;
-        margin-bottom: 162px;
+        margin-top: 132px;
         text-shadow: 4px 4px 0 var(--text-color-highlight);
         letter-spacing: 0.4rem;
         line-height: 6.188rem;
@@ -123,12 +100,19 @@
     }
 
     .header__title {
-        margin-top: 10px;
-        margin-bottom: 183px;
+        margin-top: 139px;
+        padding-right: 20px;
         text-align: left;
         width: 364px;
         align-self: start;
         justify-self: end;
+        letter-spacing: 0.05rem;
+    }
+
+    /* Articles */
+
+    .articles {
+        margin-top: 200px;
     }
 
     h2:not(.pictures__title):not(.footer__title) {
