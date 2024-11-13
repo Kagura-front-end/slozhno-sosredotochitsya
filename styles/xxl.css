@@ -1,7 +1,8 @@
 @media (1023px <= width) {
 
     .page {
-        width: 1024px;
+        min-width: 1024px;
+        max-width: 1440px;
     }
 
     .header {
@@ -119,8 +120,8 @@
 
     .page-title {
         font-size: var(--title-size);
-        margin-top: 100px;
-        margin-bottom: 162px;
+/*        margin-top: 100px;
+        margin-bottom: 162px;*/
         text-shadow: 4px 4px 0 var(--text-color-highlight);
         letter-spacing: -0.1rem;
         line-height: 6.188rem;

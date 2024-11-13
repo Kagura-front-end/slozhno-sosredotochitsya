@@ -1,18 +1,21 @@
-
-
 @media (768px <= width <= 1023px) {
 
     .page {
-        width: 768px;
+        min-width: 768px;
+        max-width: 990px;
+        padding-top: 20px;
+        padding-right: 20px;
     }
 
     .header {
         max-height: 1024px;
-        margin: 20px;
+        /*margin: 20px;*/
     }
 
-   .rec-symbol {
-        right: 10px;
+    .rec-symbol {
+        right: 8px;
+        line-height: 25px;
+        font-size: 20px;
     }
 
     .rec-symbol::after {
@@ -23,7 +26,7 @@
         border-radius: 50%;
         box-shadow: 0 0 4px 2px var(--highlighted-area);
         background-color: var(--highlighted-area);
-        margin-left: 5px
+        margin-left: 10px;
     }
 
     .decorated-zone {
@@ -169,11 +172,12 @@
     .rows-layout {
         display: grid;
         grid-template-columns: 1fr, auto, auto, auto;
-        grid-template-rows: repeat(4,auto);
+        grid-template-rows: repeat(4, auto);
     }
 
     .dense-title {
-    grid-column: 1 / 2; grid-row: 1;
+        grid-column: 1 / 2;
+        grid-row: 1;
         width: 25%
     }
 

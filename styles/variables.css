@@ -4,7 +4,7 @@
     --heighlighted-area: #FF0070;
     --text-color-highlight: #FF0070;
     --heading-color: #DB00FF;
-    --line-height: 1.463rem;
+    --line-height: 82.5%;
     --font-weight-bold: 700;
     --font-size: 18px;
     --text-color-main: #F1B2CE;
@@ -17,6 +17,7 @@
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
 }
 /*
 @media (prefers-color-scheme: auto) {
