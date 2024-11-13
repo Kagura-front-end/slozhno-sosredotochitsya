@@ -5,6 +5,7 @@
         max-width: 990px;
         margin-top: 20px;
         padding-right: 20px;
+        font-family: var(--font-family);
     }
 
     .header {
@@ -109,16 +110,16 @@
         letter-spacing: 0.05rem;
     }
 
-    /* Articles */
-
+    /* ----------------  Articles ----------------  */
     .articles {
         margin-top: 236px;
+        /*       font-family: var(--font-family);*/
     }
 
     .article-container {
         display: grid;
         grid-template-columns: 277px auto auto;
-        /*gap: var(--padding-desktop);*/
+        padding-bottom: 70px;
     }
 
     .title-question {
@@ -126,50 +127,23 @@
         width: 90%;
         padding-left: var(--padding-desktop);
         padding-top: var(--padding-mobile);
-        font-family: var(--font-family);
         letter-spacing: var(--letter-spacing-small);
         line-height: var(--line-height-titles);
+        font-weight: var(--font-weight-bold);
     }
 
     .article-header {
-
+        margin: 10px auto;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: var(--letter-spacing-small);
     }
 
     .article-text {
         width: 99%;
-        font-family: var(--font-family);
+        /*        font-family: var(--font-family);*/
         letter-spacing: var(--letter-spacing-small);
         padding-bottom: var(--padding-mobile);
     }
-
-/*
-
-    h2:not(.pictures__title):not(.footer__title) {
-        margin: 50px 20px 10px 10px;
-    }*/
-
-    h3, h4 {
-        text-align: left;
-    }
-
-    h3 {
-        margin: 10px auto;
-    }
-
-    h4 {
-        margin: 20px 10px 10px 10px;
-    }
-
-    p {
-        text-align: left;
-    }
-/*
-    .article-container {
-        display: grid;
-        grid-template-columns: repeat(3, auto);
-    }*/
-
-
 
     .one-column {
         grid-column: 2 / 4;
@@ -178,18 +152,49 @@
 
     .rows-layout {
         display: grid;
-        grid-template-columns: 1fr, auto, auto, auto;
+        grid-template-columns: 1fr auto auto auto;
         grid-template-rows: repeat(4, auto);
+        padding-left: var(--padding-desktop);
+        padding-bottom: 72px;
     }
 
     .dense-title {
         grid-column: 1 / 2;
         grid-row: 1;
-        width: 25%
+        width: 25%;
+        padding-bottom: var(--padding-mobile);
+        letter-spacing: var(--letter-spacing-small);
     }
 
+    .rows-layout .article-text {
+        width: 100%;
+        padding-bottom: var(--padding-mobile);
+    }
+
+
     .golden-fish-question {
-        width: 50%;
+        padding-left: var(--padding-desktop);
+        width: 90%;
+        letter-spacing: var(--letter-spacing-small);
+    }
+
+    .article-advices .article-header {
+        margin-top: 0;
+        margin-bottom: var(--padding-desktop);
+    }
+
+    .article-advices h4 {
+        margin-bottom: var(--padding-mobile);
+        font-weight: var(--font-weight-normal);
+        letter-spacing: var(--letter-spacing-small);
+    }
+
+    .article-advices .article-text {
+        margin-bottom: var(--padding-mobile);
+    }
+
+    .one-column:last-child .article-text{
+        margin-bottom:0;
     }
 
     .multitasking {
@@ -204,14 +209,21 @@
         grid-row: 4;
     }
 
+    /* ---------------- Pictures  ---------------- */
+    .pictures {
+        padding-left: var(--padding-desktop);
+    }
+
     .pictures__title {
         text-align: left;
-        margin: 50px 10px 10px 10px;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: var(--letter-spacing-small);
+        margin-bottom: var(--padding-desktop);
     }
 
     .pictures__cards {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: var(--padding-desktop);
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
         margin-bottom: 65px;
@@ -252,10 +264,13 @@
     }
 
     .footer {
-        min-height: 668px;
+        min-height: 1024px;
     }
 
     .footer__title {
+        padding-left: var(--padding-desktop);
+        letter-spacing: 0.4rem;
+        line-height: 6.188rem;
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
 }

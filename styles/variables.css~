@@ -26,7 +26,7 @@
     --padding-mobile: 10px;
 
     --letter-spacing-condensed: -0.1rem;
-    --letter-spacing-small: 0.052rem;
+    --letter-spacing-small: 0.0512rem;
 
     --letter-spacing-medium: 0.1rem;
     --letter-spacing-large: 0.2rem;
