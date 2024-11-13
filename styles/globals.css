@@ -6,9 +6,9 @@
 }
 
 body {
-  margin: 0 auto;
-  overflow-y: auto;
-  overflow-x: hidden
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden
 }
 
 h1,
@@ -34,35 +34,35 @@ picture {
 
 button,
 a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+    color: currentColor;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 
-    h2:not(.pictures__title):not(.footer__title) {
-      color: var(--text-color-highlight);
-      font-size: var(--font-size);
-      line-height: var(--line-height);
-      font-weight: var(--font-weight-bold);
-      text-align: left;
-    }
+h2:not(.pictures__title):not(.footer__title) {
+    color: var(--text-color-highlight);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
+    text-align: left;
+}
 
-    h3, h4 {
-      color: var(--text-color-transparent);
-      background-color: var(--highlighted-area);
-      font-size: var(--font-size);
-      line-height: var(--line-height);
-      font-weight: var(--font-weight-bold);
-    }
+h3, h4 {
+    color: var(--text-color-transparent);
+    background-color: var(--highlighted-area);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-bold);
+}
 
-      p {
-        color: var(--text-color-main);
-        font-size: var(--font-size);
-        line-height: var(--line-height);
-        font-weight: var(--font-weight-normal);
-      }
+p {
+    color: var(--text-color-main);
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    font-weight: var(--font-weight-normal);
+}
 
 
 

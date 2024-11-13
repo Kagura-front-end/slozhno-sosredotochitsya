@@ -20,7 +20,7 @@
     align-items: start;
     height: 100vh;
     color: var(--highlighted-area);
-    /*font-family: 'IBM Plex Mono', sans-serif;*/
+    font-family: 'IBM Plex Mono', sans-serif;
     font-size: 18px;
 }
 
@@ -43,7 +43,7 @@
     text-align: center;
     border-block-end: 1px solid transparent;
     color: var(--text-color-highlight);
-    /*font-size: 18px;*/
+    font-size: 18px;
     text-transform: lowercase;
     background-color: transparent;
     cursor: pointer;
