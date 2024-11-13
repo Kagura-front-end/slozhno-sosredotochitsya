@@ -1,20 +1,21 @@
 @media (1023px <= width) {
 
     .page {
-        width: 1024px;
+        max-width: 1024px;
     }
 
     .header {
         height: 768px;
-        width: 1024px;
-        padding: 20px;
+        padding: var(--padding-desktop);
         display: grid;
+        max-width: 1024px;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
         "top-row"
         "second-row"
         "third-row";
+        margin: 0 auto;
     }
 
     .rec-symbol {
@@ -36,6 +37,20 @@
         margin-left: 5px
     }
 
+    .decorated-zone::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .decorated-zone::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
     .header__theme-menu {
         justify-self: center;
         align-self: start;
@@ -48,7 +63,6 @@
 
     .header__theme-menu-button {
         min-inline-size: 70px;
-        letter-spacing: 0.1em;
         padding: 3px 13px;
     }
 
@@ -101,12 +115,11 @@
         justify-self: start;
         align-self: center;
         grid-area: second-row;
-        transform: scaleX(1.1);
+        transform: scaleY(1.1);
+        margin-top: 8px;
+        margin-left: -10px;
     }
 
-    .focus-space {
-        letter-spacing: 0.3em;
-    }
     .header__title {
         margin-bottom: 50px;
         text-align: left;
@@ -116,8 +129,8 @@
         grid-area: third-row;
     }
 
-    h2:not(.pictures__title):not(.footer__title):not(.title-question){
-        margin: 50px 20px 10px 10px;
+    h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question){
+        margin: 30px 20px 0px 0px;
     }
 
     h3, h4 {
@@ -125,16 +138,32 @@
     }
 
     h3 {
-        margin: 10px auto;
+        margin-bottom: 10px;
     }
+
 
     h4 {
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
-    p {
+    .dophamine-title {
+        margin: 10px 0px 10px 0px;
+    }
+
+    p:not(.header__title) {
         text-align: left;
+        letter-spacing: 0.13em;
+        font-weight: var(--font-weight-normal);
+        margin-bottom: 10px;
+    }
+
+    .hyphen {
+    letter-spacing: 0;
+    }
+
+    .p-tall {
+        letter-spacing: 0.14em;
     }
 
     .article-container {
@@ -142,7 +171,7 @@
         display: grid;
         grid-template-columns: auto 65.8%;
         align-items: start;
-        padding: 20px;
+        padding: var(--padding-desktop);
     }
 
     .title-question {
@@ -161,7 +190,8 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        letter-spacing: 0.1em
+        letter-spacing: 0.1em;
+        padding: var(--padding-desktop)
     }
 
     .dense-title {
@@ -181,14 +211,19 @@
     }
 
     .golden-fish-question {
-        width: 60%;
+        width: 95%;
+        letter-spacing: 0.08em;
+    }
+
+    .tips-container {
+        margin-top: 25px;
+        letter-spacing: 0.15em
     }
 
 
     .pictures__title {
         text-align: left;
-        margin-top: 50px;
-        margin-bottom: 10px;
+        margin: 50px 18px 10px 18px;
     }
 
     .pictures__cards {
@@ -196,13 +231,14 @@
         grid-gap: 20px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
-        margin-bottom: 65px;
+        margin-bottom: 50px;
+        padding: 10px 20px;
     }
 
     .sunset {
         grid-column-start: 1;
         grid-column-end: 3;
-        height: 192px;
+        height: 260px;
     }
 
     .ice-cream {
@@ -210,23 +246,24 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3;
-        height: 441px;
+        height: 595px;
     }
 
     .tape {
         grid-row-start: 2;
         grid-row-end: 4;
-        height: 568px;
+        height: 768px;
     }
 
     .street {
         grid-column-start: 2;
         grid-column-end: 4;
-        height: 318px;
+        height: 428px;
+        margin-top: 5px;
     }
 
     .books {
-        height: 230px;
+        height: 315px;
     }
 
     .pictures__cards img {
@@ -234,10 +271,13 @@
     }
 
     .footer {
-        min-height: 668px;
+        height: 768px;
     }
 
     .footer__title {
-        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    }
+        font-size: var(--title-size);
+        line-height: 6.188rem;
+        letter-spacing: 0.05em;
+        transform: scaleX(1.2);
+}
 }
