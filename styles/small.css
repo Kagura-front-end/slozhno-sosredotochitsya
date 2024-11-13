@@ -1,0 +1,194 @@
+@media (375px <= width /*<= 767px */) {
+
+    .page {
+        max-width: 375px;
+        padding: 10px;
+    }
+
+    .header {
+        max-height: 668px;
+        max-width: 375px;
+    }
+
+    .main {
+        background-color: var(--background-color);
+    }
+
+    .rec-symbol {
+        top: 11px;
+        right: 21px;
+        gap: 10px;
+        color: var(--highlighted-area);
+        font-size: 18px;
+    }
+
+    .rec-symbol::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        box-shadow: 0 0 4px 2px var(--highlighted-area);
+        background-color: var(--highlighted-area);
+    }
+
+
+    .decorated-zone::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 25px;
+        height: 25px;
+        border-inline-end: 1px solid var(--highlighted-area);
+        border-block-start: 1px solid var(--highlighted-area);
+    }
+
+    .decorated-zone::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border-inline-start: 1px solid var(--highlighted-area);
+        border-block-end: 1px solid var(--highlighted-area);
+    }
+
+    .header__theme-menu {
+        justify-self: end;
+        margin-block: 65px;
+        color: var(--text-color-highlight);
+    }
+
+    .header__theme-menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__theme-menu-button {
+        min-inline-size: 70px;
+        letter-spacing: 0.1em;
+    }
+
+    .header__theme-menu-button:hover {
+        border: var(--border-style__hover);
+        border-block-end: 1px solid transparent;
+        color: var(--text-color-highlight);
+        font-size: 18px;
+        text-align: center;
+        text-transform: lowercase;
+        background-color: transparent;
+        cursor: pointer;
+        min-inline-size: 70px;
+    }
+
+    .header__theme-menu-button:focus {
+        border: var(--border-style__hover);
+        border-block-end: 1px solid transparent;
+        color: var(--text-color-highlight);
+        font-size: 18px;
+        text-align: center;
+        text-transform: lowercase;
+        background-color: transparent;
+        cursor: pointer;
+        min-inline-size: 70px;
+    }
+
+    .header__theme-menu-button:focus-visible {
+        border: var(--border-style__hover);
+        border-block-end: 1px solid transparent;
+        color: var(--text-color-highlight);
+        font-size: 18px;
+        text-align: center;
+        text-transform: lowercase;
+        background-color: transparent;
+        cursor: pointer;
+        min-inline-size: 70px;
+    }
+
+    .header__theme-menu-button_active {
+        border: var(--border-style__hover);
+        cursor: pointer;
+    }
+
+
+    .page-title {
+        font-size: var(--title-size);
+        line-height: 84%;
+=    }
+
+    .header__title {
+        margin-block: 25px;
+        align-self: start;
+    }
+
+    h2:not(.pictures__title):not(.footer__title) {
+        margin: 50px 20px 10px 10px;
+        font-family: "IBM Plex Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.463rem;
+        text-align: left;
+    }
+
+    h2:first-of-type:not(.pictures__title) {
+        width: 70%;
+        padding-top: 40px;
+        margin: 0;
+    }
+
+    h3, h4 {
+        text-align: left;
+    }
+
+    h4 {
+        margin: 20px 10px 0 0;
+    }
+
+    p {
+        text-align: left;
+        letter-spacing: 0.1em;
+        font-family: "IBM Plex Mono", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.47rem;
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .pictures__title {
+        text-align: left;
+        margin: 50px 10px 10px 10px;
+        width: 100%;
+    }
+
+    .pictures__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+
+    .pictures__cards img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .footer {
+        min-height: 668px;
+    }
+
+    .footer__title {
+        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    }
+}
