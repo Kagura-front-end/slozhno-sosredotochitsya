@@ -9,6 +9,8 @@
         min-height: 768px;
         min-width: 1024px;
         padding: 20px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
         "top-row"
@@ -94,22 +96,25 @@
 
     .page-title {
         font-size: var(--title-size);
-/*        margin-top: 100px;
-        margin-bottom: 162px;*/
         text-shadow: 4px 4px 0 var(--text-color-highlight);
         letter-spacing: -0.1rem;
         line-height: 6.188rem;
         justify-self: start;
         align-self: center;
+        grid-area: second-row;
+        transform: scaleX(1.1);
     }
 
+    .focus-space {
+        letter-spacing: 0.3em;
+    }
     .header__title {
-        margin-top: 10px;
-        margin-bottom: 183px;
+        margin-bottom: 50px;
         text-align: left;
-        width: 364px;
-        align-self: start;
+        width: 491px;
+        align-self: center;
         justify-self: end;
+        grid-area: third-row;
     }
 
     h2:not(.pictures__title):not(.footer__title) {
