@@ -6,7 +6,7 @@
 
     .header {
         height: 768px;
-        padding: 20px;
+        padding: var(--padding-desktop);
         display: grid;
         max-width: 1024px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -147,8 +147,18 @@
         margin-bottom: 10px;
     }
 
-    p {
+    p:not(.header__title) {
         text-align: left;
+        letter-spacing: 0.13em;
+        font-weight: var(--font-weight-normal);
+    }
+
+    .hyphen {
+    letter-spacing: 0;
+    }
+
+    .p-tall {
+        letter-spacing: 0.14em;
     }
 
     .article-container {
@@ -156,7 +166,7 @@
         display: grid;
         grid-template-columns: auto 65.8%;
         align-items: start;
-        padding: 20px;
+        padding: var(--padding-desktop);
     }
 
     .title-question {
