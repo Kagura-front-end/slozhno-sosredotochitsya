@@ -112,10 +112,10 @@
 
     .page-title {
         font-size: var(--title-size);
-        margin-top: 100px;
+        margin-top: 178px;
         margin-bottom: 162px;
         text-shadow: 4px 4px 0 var(--text-color-highlight);
-        letter-spacing: -0.1rem;
+        letter-spacing: 0.4rem;
         line-height: 6.188rem;
         justify-self: start;
         align-self: center;
