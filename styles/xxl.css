@@ -63,7 +63,6 @@
 
     .header__theme-menu-button {
         min-inline-size: 70px;
-        letter-spacing: 0.1em;
         padding: 3px 13px;
     }
 
@@ -212,14 +211,19 @@
     }
 
     .golden-fish-question {
-        width: 80%;
+        width: 95%;
+        letter-spacing: 0.08em;
+    }
+
+    .tips-container {
+        margin-top: 25px;
+        letter-spacing: 0.15em
     }
 
 
     .pictures__title {
         text-align: left;
-        margin-top: 50px;
-        margin-bottom: 10px;
+        margin: 50px 18px 10px 18px;
     }
 
     .pictures__cards {
@@ -227,13 +231,14 @@
         grid-gap: 20px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(3, auto);
-        margin-bottom: 65px;
+        margin-bottom: 50px;
+        padding: 10px 20px;
     }
 
     .sunset {
         grid-column-start: 1;
         grid-column-end: 3;
-        height: 192px;
+        height: 260px;
     }
 
     .ice-cream {
@@ -241,23 +246,24 @@
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3;
-        height: 441px;
+        height: 595px;
     }
 
     .tape {
         grid-row-start: 2;
         grid-row-end: 4;
-        height: 568px;
+        height: 768px;
     }
 
     .street {
         grid-column-start: 2;
         grid-column-end: 4;
-        height: 318px;
+        height: 428px;
+        margin-top: 5px;
     }
 
     .books {
-        height: 230px;
+        height: 315px;
     }
 
     .pictures__cards img {
@@ -265,10 +271,12 @@
     }
 
     .footer {
-        min-height: 668px;
+        height: 768px;
     }
 
     .footer__title {
-        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    }
+        font-size: var(--title-size);
+        line-height: 6.188rem;
+        letter-spacing: 0.05em;
+        transform: scaleX(1.2);
 }
