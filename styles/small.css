@@ -2,12 +2,12 @@
 
     .page {
         max-width: 375px;
-        padding: 10px;
     }
 
     .header {
         max-height: 668px;
         max-width: 375px;
+        padding: 10px;
     }
 
     .main {
@@ -36,8 +36,8 @@
     .decorated-zone::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 10px;
+        right: 10px;
         width: 25px;
         height: 25px;
         border-inline-end: 1px solid var(--highlighted-area);
@@ -47,8 +47,8 @@
     .decorated-zone::after {
         content: "";
         position: absolute;
-        bottom: 20px;
-        left: 0;
+        bottom: 10px;
+        left: 10px;
         width: 25px;
         height: 25px;
         border-inline-start: 1px solid var(--highlighted-area);
@@ -116,12 +116,14 @@
 
     .page-title {
         font-size: var(--title-size);
-        line-height: 84%;
+        line-height: 83%;
 =    }
 
     .header__title {
-        margin-block: 25px;
-        align-self: start;
+        align-self: center;
+        width: 355px;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
     }
 
     h2:not(.pictures__title):not(.footer__title) {
@@ -134,9 +136,14 @@
     }
 
     h2:first-of-type:not(.pictures__title) {
-        width: 70%;
-        padding-top: 40px;
+        width: 80%;
+        padding-top: 30px;
         margin: 0;
+        letter-spacing: 0.04em;
+    }
+
+    .articles {
+        padding: 0 10px;
     }
 
     h3, h4 {
