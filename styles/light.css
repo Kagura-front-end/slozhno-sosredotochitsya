@@ -1,23 +1,20 @@
 .page.theme_light {
     --background-color: #FFF1F7;
     --background: url("../images/cover-image-light.png");
-    --highlighted-area: #FF8DCB;
-    --text-color-highlight: #353430;
-    --heading-color: #FFC2E6;
-    --line-height: 1.4625rem;
     --text-color-main: #353430;
+    --text-color-highlight: #353430;
     --text-color-transparent: #353430;
-
     --shadow: #FF0070;
+    --highlighted-area: #FF8DCB;
+    --heading-color: #FFC2E6;
+    --font-family: 'IBM Plex Mono', sans-serif;
+    --font-size: 18px;
+    --line-height: 1.4625rem;
+    --font-weight-bold: 700px;
+    --font-weight-normal: 400px;
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
 }
-
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 
     @media (prefers-color-scheme: light) {
         :root {
@@ -39,3 +36,10 @@
             --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
         }
 }
+
+@media (prefers-color-scheme: light) {
+    .rec-symbol {
+        display: none;
+    }
+}
+

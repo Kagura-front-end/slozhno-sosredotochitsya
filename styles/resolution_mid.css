@@ -1,5 +1,7 @@
 
+
 @media (768px <= width <= 1023px) {
+
     .page {
         width: 768px;
     }
