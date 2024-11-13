@@ -39,6 +39,9 @@
 @media (prefers-color-scheme: light) {
     .rec-symbol {
         display: none;
+        visibility: hidden;
     }
 }
+
+
 

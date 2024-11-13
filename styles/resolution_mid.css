@@ -19,23 +19,6 @@
         margin-left: 20px;
     }
 
-    .rec-symbol {
-        right: 8px;
-        line-height: var(--line-height-titles);
-        font-size: 20px;
-    }
-
-    .rec-symbol::after {
-        content: "";
-        position: relative;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        box-shadow: 0 0 4px 2px var(--highlighted-area);
-        background-color: var(--highlighted-area);
-        margin-left: 10px;
-    }
-
     .header__theme-menu {
         justify-self: end;
         color: var(--text-color-highlight);

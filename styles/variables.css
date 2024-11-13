@@ -29,7 +29,8 @@
 
 
 }
-/*
+
+
 @media (prefers-color-scheme: auto) {
     :root {
         --background-color: var(--background-color, #000028);
@@ -47,7 +48,11 @@
         --border-style: var(--border-style, 1px solid #ff0070);
         --border-style__hover: var(--border-style__hover, 1px solid rgba(255, 0, 112, 0.4));
     }
-}*/
+        .rec-symbol {
+            display: block;
+            visibility: visible;
+        }
+}
 
 
 @media (width >= 768px) {
