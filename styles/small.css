@@ -15,6 +15,7 @@
     }
 
     .rec-symbol {
+        position: relative;
         top: 11px;
         right: 21px;
         gap: 10px;
@@ -65,6 +66,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        padding-right: 5px;
     }
 
     .header__theme-menu-button {
@@ -73,7 +75,7 @@
 
     .header__theme-menu-button:hover {
         outline: var(--border-style__hover);
-        outline-offset: 2px;
+        outline-offset: 1px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;
@@ -85,7 +87,7 @@
 
     .header__theme-menu-button:focus {
         outline: var(--border-style__hover);
-        outline-offset: 2px;
+        outline-offset: 1px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;
@@ -97,7 +99,7 @@
 
     .header__theme-menu-button:focus-visible {
         outline: var(--border-style__hover);
-        outline-offset: 2px;
+        outline-offset: 1px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;
@@ -108,7 +110,8 @@
     }
 
     .header__theme-menu-button_active {
-        border: var(--border-style__hover);
+        outline: var(--border-style__hover);
+        outline-offset: 1px;
         cursor: pointer;
     }
 
