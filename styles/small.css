@@ -1,4 +1,4 @@
-@media (375px <= width /* <= 767px */) {
+@media (min-width: 375px) and (max-width: 767px) {
 
     .page {
         max-width: 375px;
@@ -12,6 +12,104 @@
 
     .main {
         background-color: var(--background-color);
+    }
+
+    .footer {
+        min-height: 668px;
+    }
+
+    .page-title {
+        font-size: var(--title-size);
+        line-height: 81%;
+        letter-spacing: -0.02em;
+    }
+
+    .header__title {
+        align-self: center;
+        width: 355px;
+        letter-spacing: 0.01em;
+        margin-bottom: 10px;
+        margin-top: -5px;
+    }
+
+    .title-question {
+        margin-top: 40px;
+    }
+
+    .dense-title, .golden-fish-question, .pictures__title {
+        margin-top: 50px;
+    }
+
+    .title-question, .dense-title, .golden-fish-question {
+        margin-bottom: 20px;
+    }
+
+    .footer__title {
+        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    }
+
+    h2, h3, h4 {
+        text-align: left;
+        font-family: var(--font-family);
+        font-weight: var(--font-weight-bold);
+    }
+
+    h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-top: 20px;
+    }
+
+    .pictures__title {
+        margin-bottom: 10px;
+        margin-inline: 10px;
+    }
+
+    main p {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight-normal);
+        line-height: 1.463rem;
+        font-family: var(--font-family);
+        text-align: left;
+    }
+
+    .header__theme-menu {
+        justify-self: end;
+        margin-block: 65px;
+        color: var(--text-color-highlight);
+    }
+
+    .header__theme-menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__theme-menu-button {
+        min-inline-size: 70px;
+    }
+
+    .header__theme-menu-button:hover,
+    .header__theme-menu-button:focus,
+    .header__theme-menu-button:focus-visible {
+        outline: var(--border-style__hover);
+        outline-offset: 1px;
+        color: var(--text-color-highlight);
+        font-size: 18px;
+        text-align: center;
+        text-transform: lowercase;
+        background-color: transparent;
+        cursor: pointer;
+        min-inline-size: 70px;
+    }
+
+    .header__theme-menu-button_active {
+        outline: var(--border-style__hover);
+        outline-offset: 1px;
+        cursor: pointer;
     }
 
     .rec-symbol {
@@ -32,7 +130,6 @@
         box-shadow: 0 0 4px 2px var(--highlighted-area);
         background-color: var(--highlighted-area);
     }
-
 
     .decorated-zone::before {
         content: "";
@@ -56,131 +153,19 @@
         border-block-end: 1px solid var(--highlighted-area);
     }
 
-    .header__theme-menu {
-        justify-self: end;
-        margin-block: 65px;
-        color: var(--text-color-highlight);
-    }
-
-    .header__theme-menu-list {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .header__theme-menu-button {
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button:hover {
-        outline: var(--border-style__hover);
-        outline-offset: 1px;
-        color: var(--text-color-highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button:focus {
-        outline: var(--border-style__hover);
-        outline-offset: 1px;
-        color: var(--text-color-highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button:focus-visible {
-        outline: var(--border-style__hover);
-        outline-offset: 1px;
-        color: var(--text-color-highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button_active {
-        outline: var(--border-style__hover);
-        outline-offset: 1px;
-        cursor: pointer;
-    }
-
-
-    .page-title {
-        font-size: var(--title-size);
-        line-height: 81%;
-        letter-spacing: -0.02em;
-  }
-
-    .header__title {
-        align-self: center;
-        width: 355px;
-        letter-spacing: 0.01em;
-        margin-bottom: 10px;
-        margin-top: -5px;
-    }
-
-    h2:not(.pictures__title):not(.footer__title) {
-        margin: 50px 20px 10px 10px;
-        font-family: "IBM Plex Mono", sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.463rem;
-        text-align: left;
-    }
-
-    h2:first-of-type:not(.pictures__title):not(.dense-title) {
-        padding-top: 40px;
-        margin: 0;
-    }
-
     .articles {
         padding: 0 10px;
     }
 
-    h3, h4 {
-        text-align: left;
-    }
-
-    h4 {
-        margin: 20px 10px 0 0;
-    }
-
-    main p {
-        font-size: var(--font-size);
-        font-weight: var(--font-weight-normal);
-        line-height: 1.463rem;
-        font-family: var(--font-family);
-        text-align: left;
-    }
-
-    h3 {
-        margin-top: 20px;
-        margin-bottom: 10px;
-        font-weight: bold;
-    }
-
-    .pictures__title {
-        text-align: left;
-        margin: 50px 10px 10px 10px;
-        width: 100%;
+    .tips-container p {
+        padding-top: 10px;
     }
 
     .pictures__cards {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 0 10px 40px 10px;
         width: 100%;
         box-sizing: border-box;
         flex-wrap: wrap;
@@ -189,13 +174,5 @@
     .pictures__cards img {
         width: 100%;
         object-fit: cover;
-    }
-
-    .footer {
-        min-height: 668px;
-    }
-
-    .footer__title {
-        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
 }
