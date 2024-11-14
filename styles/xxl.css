@@ -25,7 +25,7 @@
 
     .rec-symbol {
         gap: 10px;
-        color: var(--highlighted-area);
+        color: var(--corner-color);
         font-size: 18px;
         grid-area: top-row;
         justify-self: end;
@@ -57,6 +57,7 @@
     }
 
     .header__theme-menu {
+        width: 230px;
         justify-self: center;
         align-self: start;
         grid-area: top-row;
@@ -66,11 +67,6 @@
         flex-direction: row;
     }
 
-    .header__theme-menu-button {
-        min-inline-size: 70px;
-        padding: 3px 13px;
-        letter-spacing: 0.1em;
-    }
 
     .header__theme-menu-button:hover {
         border: var(--border-style__hover);
@@ -116,6 +112,7 @@
     .page-title {
         line-height: 250px;
         margin-left: -19px;
+        grid-area: second-row;
     }
 
     .header__title {
@@ -123,6 +120,7 @@
         width: 491px;
         align-self: center;
         justify-self: end;
+        grid-area: third-row;
     }
 
     h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question) {

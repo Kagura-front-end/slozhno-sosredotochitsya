@@ -5,9 +5,10 @@
     --text-color-highlight: #353430;
     --text-color-transparent: #353430;
     --shadow: #FF0070;
+    --corner-color: #353430;
     --highlighted-area: #FF8DCB;
     --heading-color: #FFC2E6;
-    --line-height: 1.4625rem;
+/*    --line-height: 1.4625rem;*/
     --border-style: 1px solid #ff0070;
     --border-style__hover: 1px solid #353430;
 }
@@ -19,17 +20,16 @@
         --highlighted-area: var(--highlighted-area, #FF8DCB);
         --text-color-highlight: var(--text-color-highlight, #353430);
         --heading-color: var(--heading-color, #FFC2E6);
-        --line-height: var(--line-height, 1.4625rem);
+/*        --line-height: var(--line-height, 1.4625rem);*/
         --text-color-main: var(--text-color-main, #353430);
         --text-color-transparent: var(--text-color-transparent, #353430);
         --shadow: var(--shadow, #FF0070);
-        --font-size: 18px;
+        --corner-color: var(--corner-color, #353430);
+/*        --font-size: 18px;*/
         --border-style: 1px solid #ff0070;
         --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
     }
-}
 
-@media (prefers-color-scheme: light) {
     .rec-symbol {
         display: none;
         visibility: hidden;

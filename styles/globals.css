@@ -42,6 +42,8 @@ a {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+    padding-block: 0;
+    padding-inline: 0px;
 }
 
 
