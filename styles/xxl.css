@@ -28,7 +28,6 @@
         color: var(--highlighted-area);
         font-size: 18px;
         grid-area: top-row;
-        z-index: 2;
         justify-self: end;
     }
 
@@ -115,21 +114,8 @@
     }
 
     .page-title {
-        font-size: var(--title-size);
-        font-weight: var(--font-weight-bold);
-        text-shadow: 4px 4px 0 var(--text-color-highlight);
-        line-height: 6.188rem;
-        justify-self: start;
-        align-self: center;
-        grid-area: second-row;
-        transform: scaleY(1.1);
-        margin-top: 8px;
+        line-height: 250px;
         margin-left: -19px;
-    }
-
-    .focus-space {
-        padding-left: 25px;
-        letter-spacing: var(--letter-spacing-focus);
     }
 
     .header__title {

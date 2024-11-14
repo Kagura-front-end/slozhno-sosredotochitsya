@@ -75,7 +75,7 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     font-size: var(--title-size);
-    text-shadow: 4px 4px 0 var(--text-color-highlight);
+    text-shadow: 4px 4px 0 var(--shadow);
 }
 
 .header__title {
