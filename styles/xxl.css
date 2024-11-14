@@ -1,6 +1,5 @@
-/*
 
-@media (1023px <= width) {
+@media (min-width: 1023px) {
 
     .page {
         max-width: 1024px;
@@ -25,6 +24,7 @@
 
 
     .rec-symbol {
+        display: block;
         gap: 10px;
         color: var(--corner-color);
         font-size: 18px;
@@ -63,9 +63,12 @@
         align-self: start;
         grid-area: top-row;
     }
-
+    
     .header__theme-menu-list {
         flex-direction: row;
+        display: flex;
+        gap: var(--padding-mobile);
+        font-size: var(--font-size);
     }
 
 
@@ -300,6 +303,3 @@ p:not(.header__title) {
         transform: scaleX(1.1);
     }
 }
-
-
-*/
