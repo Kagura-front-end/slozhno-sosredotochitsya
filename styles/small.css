@@ -138,7 +138,7 @@
         text-align: left;
     }
 
-    h2:first-of-type:not(.pictures__title) {
+    h2:first-of-type:not(.pictures__title):not(.dense-title) {
         padding-top: 40px;
         margin: 0;
     }
@@ -155,20 +155,12 @@
         margin: 20px 10px 0 0;
     }
 
-    p {
-        text-align: left;
-        letter-spacing: 0.1em;
-        font-family: "IBM Plex Mono", sans-serif;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.47rem;
-    }
-
     main p {
         font-size: var(--font-size);
         font-weight: var(--font-weight-normal);
         line-height: 1.463rem;
         font-family: var(--font-family);
+        text-align: left;
     }
 
     h3 {
