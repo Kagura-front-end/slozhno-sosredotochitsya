@@ -6,8 +6,6 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-/*    margin: 0 auto;*/
-    font-family: var(--font-family);
 }
 
 /* Decorated zone */
@@ -44,13 +42,11 @@
     grid-template-rows: repeat(3, 1fr);
     align-items: start;
     height: 100vh;
-    color: var(--highlighted-area);
-}
+    color: var(--highlight);
+    padding: var(--padding-desktop);
 
-
-.header__theme-menu-list {
-    display: flex;
-    gap: var(--padding-mobile);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
 }
 
 .header__theme-menu-button {
@@ -59,7 +55,7 @@
     border: none;
     text-align: center;
     border-block-end: 1px solid transparent;
-    color: var(--text-color-highlight);
+    color: var(--highlight);
     font-size: var(--font-size);
     line-height: 1em;
     text-transform: lowercase;
@@ -79,18 +75,15 @@
 
 .header__title {
     color: var(--text-color-transparent);
-/*    font-family: 'IBM Plex Mono', monospace, sans-serif;*/
     font-weight: 700;
-/*    font-size: inherit;*/
-    background: var(--highlighted-area);
-/*    line-height: var(--line-height);*/
+    background: var(--highlight);
 }
 
 /* Main */
 .main a {
     border: 1px solid transparent;
     text-decoration: none;
-    text-shadow: 1px 1px 0 var(--text-color-highlight);
+    text-shadow: 1px 1px 0 var(--highlight);
 }
 
 
@@ -111,7 +104,7 @@
 /* Pictures */
 .pictures__title {
     color: var(--text-color-transparent);
-    background-color: var(--highlighted-area);
+    background-color: var(--highlight);
     font-size: var(--font-size);
     line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
@@ -136,6 +129,6 @@
     justify-self: center;
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
-    text-shadow: 4px 4px 0 var(--text-color-highlight);
+    text-shadow: 4px 4px 0 var(--highlight);
 }
 

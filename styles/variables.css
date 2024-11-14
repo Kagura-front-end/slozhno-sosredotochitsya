@@ -1,58 +1,98 @@
-:root {
-    --background-color: #000028;
-    --background: url("../images/cover-image.png");
-    --heighlighted-area: #FF0070;
-    --text-color-highlight: #FF0070;
-    --heading-color: #DB00FF;
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_dark {
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+
+    --background: url('../images/cover-image.png');
+
+    --dark: #000028;
+    --dusk: #353430;
+    --light: #F1B2CE;
+    --bright: #FF0070;
+    --brightest: #DB00FF;
+
+    --background-color: var(--dark);
+
+    --highlight: var(--bright);
+    --heading-color: var(--brightest);
+    --text-color-main: var(--light);
+    --text-color-transparent: var(--dark);
+    --shadow: var(--brightest);
+    --corner-color: var(--dusk);
+
     --line-height: 1.463rem;
     --line-height-titles: 25px;
-    --font-weight-bold: 700;
-    --font-size: 18px;
+
     --font-family: 'IBM Plex Mono', monospace, sans-serif;
-    --text-color-main: #F1B2CE;
-    --text-color-transparent: #000028;
-    --shadow: #FF0070;
-    --corner-color: #353430;
+    --font-weight-bold: 700;
     --font-weight-normal: 400;
-    --border-style: 1px solid #353430;
-    --border-style__hover: 1px solid #ff0070;
+    --font-size: 18px;
+
+    --border-style: 1px solid var(--dusk);
+    --border-style__hover: 1px solid var(--bright);
+
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    --padding-desktop:20px;
+
+    --padding-desktop: 20px;
     --padding-mobile: 10px;
 
-    --letter-spacing-condensed: -0.1rem;
+    --letter-spacing-tiny: -0.1rem;
     --letter-spacing-small: 0.052rem;
     --letter-spacing-medium: 0.1rem;
     --letter-spacing-large: 0.2rem;
-    --letter-spacing-focus: 0.3rem;
+    --letter-spacing-largest: 0.3rem;
 
 
 }
 
 
-
-@media (prefers-color-scheme: auto) {
+@media (prefers-color-scheme: dark) {
     :root {
-        --background-color: var(--background-color, #000028);
-        --back-image: var(--background, "../images/cover-image.png");
-        --highlighted-area: var(--highlighted-area, #FF0070);
-        --text-color-highlight: var(--text-color-highlight, #FF0070);
-        --heading-color: var(--heading-color, #DB00FF);
-        --line-height: var(--line-height, 1.463rem);
+        --background: var(--background, url('../images/cover-image.png'));
+        --background-color: var(--background-color, var(--dark));
+
+        --highlight: var(--highlight, var(--bright));
+        --heading-color: var(--heading-color, var(--brightest));
+        --text-color-main: var(--text-color-main, var(--light));
+        --text-color-transparent: var(--text-color-transparent, var(--dark));
+        --shadow: var(--shadow, var(--brightest));
+        --corner-color: var(--corner-color, var(--dusk));
+
+/*        --line-height: var(--line-height, 1.463rem);
+        --line-height-titles: var(--line-height-titles, 25px);*/
+
+/*        --font-family: var(--font-family, "'IBM Plex Mono', monospace, sans-serif");
         --font-weight-bold: var(--font-weight-bold, 700);
-        --font-size: var(--font-size, 18px);
-        --text-color-main: var(--text-color-main, #F1B2CE);
-        --text-color-transparent: var(--text-color-transparent, #000028);
-        --shadow: var(--shadow, #FF0070);
-        --corner-color: var(--corner-color, #353430);
         --font-weight-normal: var(--font-weight-normal, 400);
-        --border-style: var(--border-style, 1px solid #ff0070);
-        --border-style__hover: var(--border-style__hover, 1px solid rgba(255, 0, 112, 0.4));
+        --font-size: var(--font-size, 18px);*/
+
+        --border-style: var(--border-style, 1px solid var(--dusk));
+        --border-style__hover: var(--border-style__hover, 1px solid var(--bright));
+
+/*        --title-size: var(--title-size, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));*/
+
+/*        --padding-desktop: var(--padding-desktop, 20px);
+        --padding-mobile: var(--padding-mobile, 10px);*/
+
+/*        --letter-spacing-tiny: var(--letter-spacing-tiny, -0.1rem);
+        --letter-spacing-small: var(--letter-spacing-small, 0.052rem);
+        --letter-spacing-medium: var(--letter-spacing-medium, 0.1rem);
+        --letter-spacing-large: var(--letter-spacing-large, 0.2rem);
+        --letter-spacing-largest: var(--letter-spacing-largest, 0.3rem);*/
+
     }
-        .rec-symbol {
-            display: block;
-            visibility: visible;
-        }
+
+    .rec-symbol {
+        display: block;
+        visibility: visible;
+    }
 }
 
 

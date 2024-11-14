@@ -2,11 +2,11 @@
 
     .page {
         max-width: 1024px;
+     /*   padding: var(--padding-desktop);*/
     }
 
     .header {
         height: 768px;
-        padding: var(--padding-desktop);
         display: grid;
         max-width: 1024px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -15,8 +15,8 @@
         "top-row"
         "second-row"
         "third-row";
-        margin: 0 auto;
     }
+
     .main {
         background-color: var(--background-color);
     }
@@ -36,8 +36,8 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        box-shadow: 0 0 4px 2px var(--highlighted-area);
-        background-color: var(--highlighted-area);
+        box-shadow: 0 0 4px 2px var(--highlight);
+        background-color: var(--highlight);
         margin-left: 10px;
     }
 
@@ -64,13 +64,15 @@
 
     .header__theme-menu-list {
         flex-direction: row;
+        display: flex;
+        gap: var(--padding-mobile);
+        font-size: var(--font-size);
     }
-
 
     .header__theme-menu-button:hover {
         border: var(--border-style__hover);
         border-block-end: 1px solid transparent;
-        color: var(--text-color-highlight);
+        color: var(--highlight);
         font-size: 18px;
         text-align: center;
         text-transform: lowercase;
@@ -82,7 +84,7 @@
     .header__theme-menu-button:focus {
         border: var(--border-style__hover);
         border-block-end: 1px solid transparent;
-        color: var(--text-color-highlight);
+        color: var(--highlight);
         font-size: 18px;
         text-align: center;
         text-transform: lowercase;
@@ -94,7 +96,7 @@
     .header__theme-menu-button:focus-visible {
         border: var(--border-style__hover);
         border-block-end: 1px solid transparent;
-        color: var(--text-color-highlight);
+        color: var(--highlight);
         font-size: 18px;
         text-align: center;
         text-transform: lowercase;
@@ -109,8 +111,7 @@
     }
 
     .page-title {
-        line-height: 250px;
-        margin-left: -19px;
+        /*line-height: 250px;*/
         grid-area: second-row;
     }
 
@@ -192,7 +193,7 @@ p:not(.header__title) {
     }
 
     .article-advices .article-text {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .one-column {
