@@ -13,6 +13,7 @@
     --background: url("../images/cover-image-dark.png");
     --highlighted-area: #FF0070;
     --shadow: #FF0070;
+    --corner-color: #FF0070;
     --text-color-highlight: #FF0070;
     --heading-color: #DB00FF;
     --line-height: 1.4625rem;
@@ -26,6 +27,8 @@
         --background-color: var(--background-color, #000028);
         --back-image: var(--background, "../images/cover-image-dark.png");
         --highlighted-area: var(--highlighted-area, #FF0070);
+        --shadow: var(--shadow, #FF0070);
+        --corner-color: var(--corner-color, #FF0070);
         --text-color-highlight: var(--text-color-highlight, #FF0070);
         --heading-color: var(--heading-color, #DB00FF);
         --line-height: var(--line-height, 1.4625rem);
