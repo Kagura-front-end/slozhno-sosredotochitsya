@@ -1,4 +1,7 @@
 
+
+
+/*
 @media (768px <= width <= 1023px) {
 
     .page {
@@ -94,10 +97,8 @@
         letter-spacing: 0.05rem;
     }
 
-    /* ----------------  Articles ----------------  */
     .articles {
         margin-top: 236px;
-        /*       font-family: var(--font-family);*/
     }
 
     .article-container {
@@ -124,7 +125,6 @@
 
     .article-text {
         width: 99%;
-        /*        font-family: var(--font-family);*/
         letter-spacing: var(--letter-spacing-small);
         padding-bottom: var(--padding-mobile);
     }
@@ -193,7 +193,6 @@
         grid-row: 4;
     }
 
-    /* ---------------- Pictures  ---------------- */
     .pictures {
         padding-left: var(--padding-desktop);
     }
@@ -258,3 +257,7 @@
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
 }
+
+*/
+
+

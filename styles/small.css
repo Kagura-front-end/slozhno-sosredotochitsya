@@ -1,4 +1,4 @@
-@media (375px <= width <= 767px) {
+@media (375px <= width /* <= 767px */) {
 
     .page {
         max-width: 375px;
@@ -64,17 +64,16 @@
     .header__theme-menu-list {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 
     .header__theme-menu-button {
         min-inline-size: 70px;
-        letter-spacing: 0.1em;
     }
 
     .header__theme-menu-button:hover {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
+        outline: var(--border-style__hover);
+        outline-offset: 2px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;
@@ -85,8 +84,8 @@
     }
 
     .header__theme-menu-button:focus {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
+        outline: var(--border-style__hover);
+        outline-offset: 2px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;
@@ -97,8 +96,8 @@
     }
 
     .header__theme-menu-button:focus-visible {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
+        outline: var(--border-style__hover);
+        outline-offset: 2px;
         color: var(--text-color-highlight);
         font-size: 18px;
         text-align: center;

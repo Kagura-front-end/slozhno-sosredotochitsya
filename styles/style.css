@@ -49,12 +49,6 @@
     color: var(--highlighted-area);
 }
 
-
-.header__theme-menu-list {
-    display: flex;
-    gap: var(--padding-mobile);
-}
-
 .header__theme-menu-button {
     width: 70px;
     height: 26px;
