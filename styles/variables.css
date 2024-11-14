@@ -14,8 +14,8 @@
     --shadow: #FF0070;
     --corner-color: #353430;
     --font-weight-normal: 400;
-    --border-style: 1px solid #ff0070;
-    --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
+    --border-style: 1px solid #353430;
+    --border-style__hover: 1px solid #ff0070;
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --padding-desktop:20px;
     --padding-mobile: 10px;
@@ -28,6 +28,7 @@
 
 
 }
+
 
 
 @media (prefers-color-scheme: auto) {
@@ -60,3 +61,4 @@
         --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
+
