@@ -80,11 +80,11 @@
 
 .header__title {
     color: var(--text-color-transparent);
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
+/*    font-family: 'IBM Plex Mono', monospace, sans-serif;*/
     font-weight: 700;
-    font-size: inherit;
+/*    font-size: inherit;*/
     background: var(--highlighted-area);
-    line-height: var(--line-height);
+/*    line-height: var(--line-height);*/
 }
 
 /* Main */

@@ -119,13 +119,10 @@
     }
 
     .header__title {
-        margin-bottom: 55px;
-       /* letter-spacing: var(--letter-spacing-small); */
-        text-align: left;
+        margin-bottom: 3.3em;
         width: 491px;
         align-self: center;
         justify-self: end;
-        grid-area: third-row;
     }
 
     h2:not(.pictures__title):not(.footer__title):not(.title-question):not(.golden-fish-question) {
