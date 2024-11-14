@@ -75,11 +75,28 @@
 
 .header__title {
     color: var(--text-color-transparent);
-/*    font-family: 'IBM Plex Mono', monospace, sans-serif;*/
     font-weight: 700;
-/*    font-size: inherit;*/
     background: var(--highlighted-area);
-/*    line-height: var(--line-height);*/
+}
+
+.header__theme-menu-button:hover {
+    outline: var(--border-style__hover);
+    outline-offset: 1px;
+}
+.header__theme-menu-button:focus {
+    outline: none;
+    border-bottom: var(--border-style);
+}
+
+.header__theme-menu-button:focus-visible {
+    outline: none;
+    border-bottom: var(--border-style);
+}
+
+.header__theme-menu-button_active {
+    outline: var(--border-style);
+    outline-offset: 1px;
+    cursor: pointer;
 }
 
 /* Main */

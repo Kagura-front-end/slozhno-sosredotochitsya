@@ -9,8 +9,8 @@
     --highlighted-area: #FF8DCB;
     --heading-color: #FFC2E6;
 /*    --line-height: 1.4625rem;*/
-    --border-style: 1px solid #ff0070;
-    --border-style__hover: 1px solid #353430;
+    --border-style: 1px solid #353430;
+    --border-style__hover: 1px solid #32312D66;
 }
 
 @media (prefers-color-scheme: light) {
