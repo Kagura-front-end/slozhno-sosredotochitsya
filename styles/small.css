@@ -66,7 +66,6 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding-right: 5px;
     }
 
     .header__theme-menu-button {
@@ -118,14 +117,16 @@
 
     .page-title {
         font-size: var(--title-size);
-        line-height: 83%;
+        line-height: 81%;
+        letter-spacing: -0.02em;
   }
 
     .header__title {
         align-self: center;
         width: 355px;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.01em;
         margin-bottom: 10px;
+        margin-top: -5px;
     }
 
     h2:not(.pictures__title):not(.footer__title) {
@@ -138,10 +139,8 @@
     }
 
     h2:first-of-type:not(.pictures__title) {
-        width: 80%;
         padding-top: 40px;
         margin: 0;
-        letter-spacing: 0.04em;
     }
 
     .articles {
