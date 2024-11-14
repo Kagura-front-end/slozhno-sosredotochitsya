@@ -24,8 +24,8 @@
     right: 0;
     width: 25px;
     height: 25px;
-    border-inline-end: 1px solid var(--highlighted-area);
-    border-block-start: 1px solid var(--highlighted-area);
+    border-inline-end: 1px solid var(--corner-color);
+    border-block-start: 1px solid var(--corner-color);
 }
 
 .decorated-zone::after {
@@ -35,8 +35,8 @@
     left: 0;
     width: 25px;
     height: 25px;
-    border-inline-start: 1px solid var(--highlighted-area);
-    border-block-end: 1px solid var(--highlighted-area);
+    border-inline-start: 1px solid var(--corner-color);
+    border-block-end: 1px solid var(--corner-color);
 }
 
 /* Header */
