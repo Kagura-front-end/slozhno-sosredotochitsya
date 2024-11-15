@@ -203,8 +203,11 @@
         object-fit: cover;
     }
 
-     main a:active{
-         border: 1px solid var(--light);
-}
+     @media (prefers-color-scheme: dark) {
+         .special-link {
+             border-bottom: 1px solid var(--light);
+         }
+     }
+
 
 }
