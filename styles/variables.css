@@ -1,10 +1,7 @@
-/*
- Универсальные переменные , не связанные с темами
- обяъвлены  просто в :root . Переключение тем эти
- значения не изменяет (кроме background)
- */
 :root {
-    --background: url('../images/cover-image.png');
+    --background: url('../images/cover-image.png') no-repeat scale;
+    --hover: #FFFFFF;
+    --bright: #FFFFFF;
 
     --line-height: 1.463rem;
     --line-height-titles: 25px;
@@ -26,8 +23,14 @@
     --letter-spacing-large: 0.2rem;
     --letter-spacing-focus: 0.3rem;
 
-    --rec-display: block;
-    --rec-visibility: visible;
+    --rec-display: none;
+    --rec-visibility: hidden;
+}
+
+.page.theme_auto {
+    --corner-color: var(--bright);
+    --border-style: var(--bright);
+    --border-style__hover: var(--hover);
 }
 
 @media (min-width: 768px) {

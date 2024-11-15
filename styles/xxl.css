@@ -15,22 +15,16 @@
         "top-row"
         "second-row"
         "third-row";
-        /*
-        margin: 0 auto;
-        */
     }
 
-    .main {
-        background-color: var(--background-color);
-    }
 
     .rec-symbol {
         position: absolute;
         display: flex;
         gap: 10px;
         color: var(--highlight);
-        top: 22px;
-        right: 28px;
+        top: 0;
+        right: 7px;
         font-size: 18px;
         grid-area: top-row;
         justify-self: end;
@@ -138,15 +132,6 @@
         font-weight: var(--font-weight-normal);
         padding-bottom: var(--padding-desktop);
     }
-/*
-    .article-container p {
-        text-align: left;
-        font-weight: 400;
-        padding-bottom: var(--padding-desktop);
-        font-size: 18px;
-        letter-spacing: var(--letter-spacing-smallest);
-    }*/
-
 
     .title-question {
         grid-column: 1 / 2;

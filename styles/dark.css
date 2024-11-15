@@ -27,4 +27,7 @@
     --border-style: var(--bright);
     --border-style__hover: var(--hover);
 
+    --rec-display: block;
+    --rec-visibility: visible;
+
 }
