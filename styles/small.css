@@ -1,5 +1,5 @@
 
- @media (min-width: 375px)  and (max-width: 767px) {
+ @media (min-width: 375px) /* and (max-width: 767px) */ {
 
     .page {
         max-width: 375px;
@@ -43,7 +43,7 @@
     }
 
     .title-question {
-        margin-top: 40px;
+        margin-top: 42px;
     }
 
     .dense-title, .golden-fish-question, .pictures__title {
