@@ -3,9 +3,10 @@
     --dark: #000028;
     --dusk: #353430;
     --light: #F1B2CE;
-    --hover: #FF007066;
+    --hover: #FF0070;
     --bright: #FF0070;
     --brightest: #DB00FF;
+
 
     --background: url('../images/cover-image-dark.png');
     --background-color: var(--dark);
