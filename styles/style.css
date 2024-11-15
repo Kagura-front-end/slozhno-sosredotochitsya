@@ -88,6 +88,20 @@ body {
 
 .header__theme-menu-button:hover {
     border-bottom: 1px solid var(--border-style__hover);
+
+    .header {
+        position: relative;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: start;
+        height: 100vh;
+        color: var(--highlighted-area);
+        background-image: var(--background);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
 }
 /*.header__theme-menu-button:focus {
     border-bottom: 1px solid var(--border-style__hover);
