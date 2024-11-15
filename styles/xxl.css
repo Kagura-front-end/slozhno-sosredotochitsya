@@ -29,8 +29,8 @@
         display: flex;
         gap: 10px;
         color: var(--highlight);
-        top: var(--padding-desktop);
-        right: var(--padding-desktop);
+        top: 22px;
+        right: 28px;
         font-size: 18px;
         grid-area: top-row;
         justify-self: end;

@@ -68,7 +68,9 @@
     height: 26px;
     border: none;
     text-align: center;
-    border-block-end: 1px solid transparent;
+    padding-top: 0px;
+    padding-bottom: 3px;
+/*    border-block-end: 1px solid transparent;*/
     color: var(--text-button);
     font-size: var(--font-size);
     line-height: 1em;
@@ -110,8 +112,12 @@
 
 .header__theme-menu-button_active {
     border-bottom: 1px solid var(--border-style);
-    outline: var(--border-style);
-    outline-offset: 1px;
+
+.header__theme-menu-button:hover {
+    border: 1px solid var(--border-style__hover);
+}
+/*    outline: var(--border-style);
+    outline-offset: 1px;*/
     cursor: pointer;
 }
 
@@ -167,5 +173,10 @@
     color: var(--heading-color);
     text-shadow: 2px 2px 0 var(--text-color-highlight);
     letter-spacing: -0.02em;
+}
+
+.rec-symbol {
+    display: var(--rec-display);
+    visibility: var(--rec-visibility);
 }
 
