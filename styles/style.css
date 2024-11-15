@@ -15,15 +15,14 @@
 */
 
 /* Page */
-.page {
+body {
     background-color: var(--background-color);
-    background-image: var(--background);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+}
+.page {
     margin: 0 auto;
     font-family: var(--font-family);
+    background-attachment: fixed
+
 }
 
 /* Decorated zone */
@@ -88,30 +87,26 @@
 }
 
 .header__theme-menu-button:hover {
-    border: 1px solid var(--border-style__hover);
-    /*outline: var(--border-style__hover);
-    outline-offset: 1px;*/
+    border-bottom: 1px solid var(--border-style__hover);
 }
-.header__theme-menu-button:focus {
-    outline: none;
-    border-bottom: var(--border-style);
+/*.header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--border-style__hover);
+
 }
 
 .header__theme-menu-button:focus-visible {
-    outline: none;
-    border-bottom: var(--border-style);
-}
+    border-bottom: 1px solid var(--border-style__hover);
+}*/
 
 .header__theme-menu-button_active {
-    border-bottom: 1px solid var(--border-style);
-
-.header__theme-menu-button:hover {
-    border: 1px solid var(--border-style__hover);
+    border: 1px solid var(--border-style);
 }
+
+
+
 /*    outline: var(--border-style);
     outline-offset: 1px;*/
-    cursor: pointer;
-}
+
 
 /* Main */
 .main a {

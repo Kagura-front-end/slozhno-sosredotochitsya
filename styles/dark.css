@@ -7,7 +7,7 @@
     --bright: #FF0070;
     --brightest: #DB00FF;
 
-    --background: '../images/cover-image-dark.png';
+    --background: url('../images/cover-image-dark.png');
     --background-color: var(--dark);
 
     --highlight: var(--bright);
@@ -22,9 +22,12 @@
 
     --shadow: var(--bright);
 
-    --corner-color: var(--dusk);
+    --corner-color: var(--bright);
 
     --border-style: var(--bright);
     --border-style__hover: var(--hover);
+
+    --rec-display: block;
+    --rec-visibility: visible;
 
 }
