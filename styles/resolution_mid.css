@@ -18,6 +18,11 @@
         "second-row"
         "third-row";
     margin: 0 auto;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .main {
     background-color: var(--background-color);
