@@ -38,8 +38,8 @@
     right: 0;
     width: 25px;
     height: 25px;
-    border-inline-end: 1px solid var(--highlighted-area);
-    border-block-start: 1px solid var(--highlighted-area);
+    border-inline-end: 1px solid var(--corner-color);
+    border-block-start: 1px solid var(--corner-color);
 }
 
 .decorated-zone::after {
@@ -49,8 +49,8 @@
     left: 0;
     width: 25px;
     height: 25px;
-    border-inline-start: 1px solid var(--highlighted-area);
-    border-block-end: 1px solid var(--highlighted-area);
+    border-inline-start: 1px solid var(--corner-color);
+    border-block-end: 1px solid var(--corner-color);
 }
 
 /* Header */
@@ -69,7 +69,7 @@
     border: none;
     text-align: center;
     border-block-end: 1px solid transparent;
-    color: var(--text-color-highlight);
+    color: var(--text-button);
     font-size: var(--font-size);
     line-height: 1em;
     text-transform: lowercase;
@@ -94,8 +94,9 @@
 }
 
 .header__theme-menu-button:hover {
-    outline: var(--border-style__hover);
-    outline-offset: 1px;
+    border: 1px solid var(--border-style__hover);
+    /*outline: var(--border-style__hover);
+    outline-offset: 1px;*/
 }
 .header__theme-menu-button:focus {
     outline: none;
@@ -108,6 +109,7 @@
 }
 
 .header__theme-menu-button_active {
+    border-bottom: 1px solid var(--border-style);
     outline: var(--border-style);
     outline-offset: 1px;
     cursor: pointer;

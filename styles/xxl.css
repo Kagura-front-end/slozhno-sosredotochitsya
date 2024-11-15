@@ -27,8 +27,8 @@
         display: flex;
         gap: 10px;
         color: var(--highlight);
-        top: 0;
-        right: 10px;
+        top: 20px;
+        right: 70px;
         font-size: 18px;
         grid-area: top-row;
         justify-self: end;
@@ -50,25 +50,13 @@
     }
 
     .decorated-zone::before {
-        content: "";
-        position: absolute;
         top: 20px;
         right: 20px;
-        width: 25px;
-        height: 25px;
-        border-inline-end: 1px solid var(--highlighted-area);
-        border-block-start: 1px solid var(--highlighted-area);
     }
 
     .decorated-zone::after {
-        content: "";
-        position: absolute;
         bottom: 20px;
         left: 20px;
-        width: 25px;
-        height: 25px;
-        border-block-end: 1px solid var(--highlighted-area);
-        border-inline-start: 1px solid var(--highlighted-area);
     }
 
     .header__theme-menu {

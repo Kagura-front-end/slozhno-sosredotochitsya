@@ -3,6 +3,7 @@
     --dark: #000028;
     --dusk: #353430;
     --light: #F1B2CE;
+    --hover: #FF9DC8;
     --bright: #FF0070;
     --brightest: #DB00FF;
 
@@ -17,12 +18,13 @@
 
     --text-color-main: var(--light);
     --text-color-transparent: var(--dark);
+    --text-button: var(--bright);
 
     --shadow: var(--bright);
 
     --corner-color: var(--dusk);
 
-    --border-style: var(--dusk);
-    --border-style__hover: var(--bright);
+    --border-style: var(--bright);
+    --border-style__hover: var(--hover);
 
 }
