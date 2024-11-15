@@ -1,5 +1,5 @@
 
- @media (min-width: 375px) /* and (max-width: 767px) */ {
+ @media (min-width: 375px) and (max-width: 767px) {
 
     .page {
         max-width: 375px;
@@ -34,20 +34,20 @@
         font-size: var(--title-size);
         line-height: 81%;
         letter-spacing: -0.02em;
+        margin-top: 2px;
     }
 
     .header__title {
         align-self: center;
         width: 355px;
-        margin-bottom: 2px;
     }
 
     .title-question {
-        margin-top: 42px;
+        margin-top: 43px;
     }
 
     .dense-title, .golden-fish-question, .pictures__title {
-        margin-top: 51px;
+        margin-top: 50px;
     }
 
     .title-question, .dense-title, .golden-fish-question {
