@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light) {
-    .body {
+    :root {
         --background: url('../images/cover-image-light.png');
         --dark: #000028;
         --dusk: #353430;
