@@ -55,8 +55,8 @@
     right: 20px;
     width: 25px;
     height: 25px;
-    border-inline-end: 1px solid var(--highlighted-area);
-    border-block-start: 1px solid var(--highlighted-area);
+    border-inline-end: 1px solid var(--corner-color);
+    border-block-start: 1px solid var(--corner-color);
 }
 
 .decorated-zone::after {
@@ -66,8 +66,8 @@
     left: 20px;
     width: 25px;
     height: 25px;
-    border-block-end: 1px solid var(--highlighted-area);
-    border-inline-start: 1px solid var(--highlighted-area);
+    border-block-end: 1px solid var(--corner-color);
+    border-inline-start: 1px solid var(--corner-color);
 }
 
 .header__theme-menu {
