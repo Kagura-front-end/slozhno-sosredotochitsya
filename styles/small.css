@@ -1,5 +1,5 @@
 
- @media (min-width: 375px) and (max-width: 767px) {
+ @media (min-width: 375px) /* and (max-width: 767px) */ {
 
     .page {
         max-width: 375px;
@@ -135,7 +135,7 @@
          position: absolute;
          display: flex;
          color: var(--highlight);
-         right: 25px;
+         right: 30px;
          top: 10px;
          font-size: 18px;
          justify-self: end;
@@ -150,7 +150,7 @@
          border-radius: 50%;
          box-shadow: 0 0 4px 2px var(--highlighted-area);
          background-color: var(--highlighted-area);
-         left: 7px;
+         left: 10px;
          top: 7px;
      }
 
