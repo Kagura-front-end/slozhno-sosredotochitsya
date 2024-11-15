@@ -57,9 +57,3 @@
 
     }
 }
-@media (prefers-color-scheme: dark) {
-    .rec-symbol {
-        display: block;
-        visibility: visible;
-    }
-}

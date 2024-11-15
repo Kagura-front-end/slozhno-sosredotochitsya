@@ -1,74 +1,36 @@
 :root {
+    --background-color: #000028;
+    --heighlighted-area: #FF0070;
+    --text-color-highlight: #FF0070;
+    --heading-color: #DB00FF;
+    --text-color-main: #F1B2CE;
+    --text-color-transparent: #000028;
+    --shadow: #FF0070;
+    --corner-color: #353430;
+
+
+
+    --border-style: 1px solid #FF0070;
+    --border-style__hover: 1px solid #FF007066;
     --line-height: 1.463rem;
     --line-height-titles: 25px;
-
     --font-weight-bold: 700;
     --font-weight-normal: 400;
     --font-size: 18px;
+    --font-family: 'IBM Plex Mono', monospace, sans-serif;
+    --background: url("../images/cover-image.png");
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-
-    --padding-desktop: 20px;
+    --padding-desktop:20px;
     --padding-mobile: 10px;
-
-    --letter-spacing-tiny: -0.1rem;
+    --letter-spacing-condensed: -0.1rem;
     --letter-spacing-small: 0.052rem;
     --letter-spacing-medium: 0.1rem;
     --letter-spacing-large: 0.2rem;
-    --letter-spacing-largest: 0.3rem;
-
+    --letter-spacing-focus: 0.3rem;
 }
 
-
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-    /*.page.theme_dark {
-        --background: url('../images/cover-image.png');
-        --background-color: var(--dark);
-
-        --highlight: var(--bright);
-        --heading-color: var(--brightest);
-        --text-color-main: var(--light);
-        --text-color-transparent: var(--dark);
-        --shadow: var(--brightest);
-        --corner-color: var(--dusk);
-
-        --border-style: 1px solid var(--dusk);
-        --border-style__hover: 1px solid var(--bright);
-    }*/
-
-
-
-
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: var(--background, url('../images/cover-image.png'));
-        --background-color: var(--background-color, var(--dark));
-
-        --highlight: var(--highlight, var(--bright));
-        --heading-color: var(--heading-color, var(--brightest));
-        --text-color-main: var(--text-color-main, var(--light));
-        --text-color-transparent: var(--text-color-transparent, var(--dark));
-        --shadow: var(--shadow, var(--brightest));
-        --corner-color: var(--corner-color, var(--dusk));
-        --border-style: var(--border-style, 1px solid var(--dusk));
-        --border-style__hover: var(--border-style__hover, 1px solid var(--bright));
-
-    }
-
-    .rec-symbol {
-        display: block;
-        visibility: visible;
-    }
-}
-
-
-@media (width >= 768px) {
+@media (min-width: 768px) {
     :root {
         --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
-

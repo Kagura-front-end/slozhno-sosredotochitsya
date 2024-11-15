@@ -1,4 +1,5 @@
-@media (1023px <= width) {
+
+@media (min-width: 1024px) {
 
     .page {
         max-width: 1024px;
@@ -6,6 +7,7 @@
 
     .header {
         height: 768px;
+        padding: var(--padding-desktop);
         display: grid;
         max-width: 1024px;
         grid-template-rows: 1fr 1fr 1fr;
@@ -14,16 +16,19 @@
         "top-row"
         "second-row"
         "third-row";
+        margin: 0 auto;
     }
-
     .main {
         background-color: var(--background-color);
     }
 
-
     .rec-symbol {
+        position: absolute;
+        display: flex;
         gap: 10px;
-        color: var(--corner-color);
+        color: var(--highlight);
+        top: 0;
+        right: 10px;
         font-size: 18px;
         grid-area: top-row;
         justify-self: end;
@@ -31,13 +36,17 @@
 
     .rec-symbol::after {
         content: "";
-        display: block;
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        box-shadow: 0 0 4px 2px var(--highlight);
-        background-color: var(--highlight);
-        margin-left: 10px;
+        box-shadow: 0 0 4px 2px var(--highlighted-area);
+        background-color: var(--highlighted-area);
+        align-self: center;
+        justify-self: center;
+    }
+
+    .decorated-zone {
+        position: relative;
     }
 
     .decorated-zone::before {
@@ -45,6 +54,10 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        width: 25px;
+        height: 25px;
+        border-inline-end: 1px solid var(--highlighted-area);
+        border-block-start: 1px solid var(--highlighted-area);
     }
 
     .decorated-zone::after {
@@ -52,6 +65,10 @@
         position: absolute;
         bottom: 20px;
         left: 20px;
+        width: 25px;
+        height: 25px;
+        border-block-end: 1px solid var(--highlighted-area);
+        border-inline-start: 1px solid var(--highlighted-area);
     }
 
     .header__theme-menu {
@@ -68,51 +85,10 @@
         font-size: var(--font-size);
     }
 
-    .header__theme-menu-button:hover {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
-        color: var(--highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button:focus {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
-        color: var(--highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button:focus-visible {
-        border: var(--border-style__hover);
-        border-block-end: 1px solid transparent;
-        color: var(--highlight);
-        font-size: 18px;
-        text-align: center;
-        text-transform: lowercase;
-        background-color: transparent;
-        cursor: pointer;
-        min-inline-size: 70px;
-    }
-
-    .header__theme-menu-button_active {
-        border: var(--border-style__hover);
-        cursor: pointer;
-    }
-
     .page-title {
         line-height: 250px;
+        margin-left: -19px;
         grid-area: second-row;
-        font-family: inherit;
     }
 
     .header__title {
@@ -156,7 +132,7 @@ p:not(.header__title) {
     }
 
     .article-container:first-of-type {
-        margin-top: 35px;
+        padding-top: 60px;
     }
 
     .article-container {
@@ -168,38 +144,30 @@ p:not(.header__title) {
     }
 
     .article-container p {
-        letter-spacing: 0.083em;
-        line-height: 1.5rem;
+        text-align: left;
+        font-weight: 400;
+        padding-bottom: var(--padding-desktop);
+        font-size: 18px;
+        letter-spacing: -0.009em;
     }
 
     .title-question {
         grid-column: 1 / 2;
-        width: 85%;
         font-weight: var(--font-weight-bold);
-        letter-spacing: 0.05em;
     }
 
     .article-header {
         font-weight: var(--font-weight-bold);
-        letter-spacing: var(--letter-spacing-small);
-    }
-
-    .article-text {
-        text-align: left;
-        font-weight: var(--font-weight-normal);
-        letter-spacing: 0.083em;
-        padding-bottom: var(--padding-desktop);
-        line-height: 1.5rem;
+        letter-spacing: 0.01em;
     }
 
     .article-advices .article-text {
-        padding-bottom: 0;
+        padding-bottom: 0px;
     }
 
     .one-column {
         grid-column: 2 / 3;
         width: 100%;
-        letter-spacing: 0.059em;
     }
 
     .rows-layout {
@@ -211,7 +179,6 @@ p:not(.header__title) {
 
     .dense-title {
         font-weight: var(--font-weight-bold);
-        letter-spacing: var(--letter-spacing-small);
         grid-column: 1;
     }
 
@@ -225,24 +192,20 @@ p:not(.header__title) {
 
     .gadgets {
         grid-column: 3;
-        letter-spacing: 0.9em;
     }
 
     .golden-fish-question {
-        width: 95%;
         font-weight: var(--font-weight-bold);
-        letter-spacing: 0.05em;
     }
 
     .tips-container {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
 
     .pictures__title {
         text-align: left;
-        margin: 50px 18px 10px 18px;
-        letter-spacing: var(--letter-spacing-small);
+        margin: 60px 18px 10px 18px;
     }
 
     .pictures__cards {
@@ -293,9 +256,13 @@ p:not(.header__title) {
         height: 768px;
     }
 
+    .footer.decorated-zone {
+        background-color: var(--background-color);
+    }
+
     .footer__title {
         font-size: var(--title-size);
         line-height: 6.188rem;
-        transform: scaleX(1.1);
+        letter-spacing: -0.01em;
     }
 }
