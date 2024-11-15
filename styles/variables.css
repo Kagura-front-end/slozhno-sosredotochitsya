@@ -1,7 +1,7 @@
 :root {
-    --background: url('../images/cover-image.png'); /*
+    --background: url('../images/cover-image.png');
     --hover: #FFFFFF;
-    --bright: #FFFFFF; */
+    --bright: #FFFFFF;
 
     --line-height: 1.463rem;
     --line-height-titles: 25px;
