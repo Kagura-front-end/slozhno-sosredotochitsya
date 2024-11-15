@@ -203,4 +203,8 @@
         object-fit: cover;
     }
 
+     main a:active{
+         border: 1px solid var(--light);
+}
+
 }
