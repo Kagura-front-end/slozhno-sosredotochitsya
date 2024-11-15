@@ -1,3 +1,19 @@
+/*
+ Здесь у нас находятся стили для мобильного варианта.
+ Стили для среднего и большого экрана находятся в файлах
+ styles/resolution_mid.css и styles/resolution_big.css
+
+ При работе с другими разрешениями надо учитывать эти
+ параметры, добавляя в файлы под другие разрешения
+ только необходимые уникальные параметры.
+
+ При подключении стилей в HTML необходимо соблюдать порядок
+ подключения (style, resolution_mid, resolution_big).
+
+ Если будет время, можно попробовать сделать bundle, чтобы
+ подключать все стили в одном файле.
+*/
+
 /* Page */
 .page {
     background-color: var(--background-color);
@@ -8,8 +24,6 @@
     background-attachment: fixed;
     margin: 0 auto;
     font-family: var(--font-family);
-
-
 }
 
 /* Decorated zone */
