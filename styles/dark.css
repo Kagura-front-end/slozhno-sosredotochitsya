@@ -13,11 +13,12 @@
     --heading-color: var(--brightest);
     --highlighted-area: var(--bright);
     --text-color-highlight: var(--bright);
+    --article-header-color: var(--bright);
 
     --text-color-main: var(--light);
     --text-color-transparent: var(--dark);
 
-    --shadow: var(--brightest);
+    --shadow: var(--bright);
 
     --corner-color: var(--dusk);
 

@@ -3,7 +3,7 @@
     --dark: #000028;
     --dusk: #353430;
     --light: #FFF1F7;
-    --bright: #FF0070;
+    --bright: #FF8DCB;
     --brightest: #FFC2E6;
 
     --background: url('../images/cover-image-light.png');
@@ -11,13 +11,14 @@
 
     --highlight: var(--bright);
     --heading-color: var(--brightest);
-    --highlighted-area: var(--brightest);
+    --highlighted-area: var(--bright);
     --text-color-highlight: var(--bright);
+    --article-header-color: var(--dusk);
 
-    --text-color-main: var(--light);
+    --text-color-main: var(--dusk);
     --text-color-transparent: var(--dark);
 
-    --shadow: var(--brightest);
+    --shadow: var(--bright);
 
     --corner-color: var(--dusk);
 
