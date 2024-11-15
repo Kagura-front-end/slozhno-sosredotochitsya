@@ -97,7 +97,6 @@
         text-transform: lowercase;
         background-color: transparent;
         cursor: pointer;
-        min-inline-size: 70px;
     }
 
     .header__theme-menu-button:hover {
