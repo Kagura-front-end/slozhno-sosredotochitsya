@@ -28,4 +28,10 @@
     --border-style__hover: var(--hover);
 }
 
+@media (prefers-color-scheme: light) {
+    .rec-symbol {
+        display: none;
+        visibility: hidden;
+    }
+}
 
