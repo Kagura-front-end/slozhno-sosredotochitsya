@@ -29,31 +29,7 @@
     --letter-spacing-focus: 0.3rem;
 }
 
-
-
-@media (prefers-color-scheme: auto) {
-    :root {
-        --background-color: var(--background-color, #000028);
-        --back-image: var(--background, "../images/cover-image.png");
-        --highlighted-area: var(--highlighted-area, #FF0070);
-        --text-color-highlight: var(--text-color-highlight, #FF0070);
-        --heading-color: var(--heading-color, #DB00FF);
-        --line-height: var(--line-height, 1.463rem);
-        --font-weight-bold: var(--font-weight-bold, 700);
-        --font-size: var(--font-size, 18px);
-        --text-color-main: var(--text-color-main, #F1B2CE);
-        --text-color-transparent: var(--text-color-transparent, #000028);
-        --shadow: var(--shadow, #FF0070);
-        --corner-color: var(--corner-color, #353430);
-        --font-weight-normal: var(--font-weight-normal, 400);
-        --border-style: var(--border-style, 1px solid #ff0070);
-        --border-style__hover: var(--border-style__hover, 1px solid rgba(255, 0, 112, 0.4));
-    }
-
-}
-
-
-@media (width >= 768px) {
+@media (min-width: 768px) {
     :root {
         --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }

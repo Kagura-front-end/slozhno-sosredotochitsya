@@ -47,3 +47,19 @@ function initTheme() {
 }
 
 initTheme();
+
+window.addEventListener("scroll", () => {
+  const footer = document.querySelector(".footer");
+  const footerBottom = footer.offsetTop + footer.offsetHeight;
+  const scrollPosition = window.scrollY + window.innerHeight;
+
+  if (scrollPosition >= footerBottom) {
+    window.scrollTo(0, footerBottom - window.innerHeight);
+  }
+});
+
+
+-------
+
+
+
