@@ -21,6 +21,7 @@ body {
 .page {
     margin: 0 auto;
     font-family: var(--font-family);
+    background-attachment: fixed
 
 }
 
