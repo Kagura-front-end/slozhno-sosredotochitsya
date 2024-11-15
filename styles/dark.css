@@ -3,7 +3,7 @@
     --dark: #000028;
     --dusk: #353430;
     --light: #F1B2CE;
-    --hover: #FF0070;
+    --hover: #ff007040;
     --bright: #FF0070;
     --brightest: #DB00FF;
 
@@ -30,5 +30,4 @@
 
     --rec-display: block;
     --rec-visibility: visible;
-
 }
