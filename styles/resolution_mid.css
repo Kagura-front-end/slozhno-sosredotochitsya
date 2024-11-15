@@ -127,8 +127,8 @@ p:not(.header__title) {
     margin-bottom: 10px;
 }
 
-.p-tall {
-    letter-spacing: 0.14em;
+p.article-text {
+    padding-bottom: 10px
 }
 
 .article-container:first-of-type {
@@ -196,64 +196,66 @@ p:not(.header__title) {
 
 .golden-fish-question {
     font-weight: var(--font-weight-bold);
+    width: 90%
 }
 
 .tips-container {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
+.pictures {
+margin-inline: 20px;
+}
 
 .pictures__title {
     text-align: left;
-    margin: 60px 18px 10px 18px;
+    margin: 60px 0 20px 0;
 }
 
-.pictures__cards {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    margin-bottom: 50px;
-    padding: 10px 20px;
-}
+    .pictures__cards {
+        display: grid;
+        grid-gap: var(--padding-desktop);
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        margin-bottom: 65px;
+    }
 
-.sunset {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    height: 260px;
-}
+    .sunset {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: 192px;
+    }
 
-.ice-cream {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    height: 595px;
-}
+    .ice-cream {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 441px;
+    }
 
-.tape {
-    grid-row-start: 2;
-    grid-row-end: 4;
-    height: 768px;
-}
+    .tape {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        height: 568px;
+    }
 
-.street {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    height: 428px;
-    margin-top: 5px;
-}
+    .street {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        height: 318px;
+    }
 
-.books {
-    height: 315px;
-}
+    .books {
+        height: 230px;
+    }
 
-.pictures__cards img {
-    width: 100%;
-}
+    .pictures__cards img {
+        width: 100%;
+    }
 
 .footer {
-    height: 768px;
+    height: 1024px;
 }
 
 .footer.decorated-zone {
