@@ -3,10 +3,9 @@
     --dark: #000028;
     --dusk: #353430;
     --light: #F1B2CE;
-    --hover: #ff007040;
+    --hover: #FF007066;
     --bright: #FF0070;
     --brightest: #DB00FF;
-
 
     --background: url('../images/cover-image-dark.png');
     --background-color: var(--dark);
@@ -30,4 +29,5 @@
 
     --rec-display: block;
     --rec-visibility: visible;
+
 }
