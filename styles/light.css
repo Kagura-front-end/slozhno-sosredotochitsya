@@ -1,33 +1,64 @@
 .page.theme_light {
-    --background-color: #FFF1F7;
-    --background: url("../images/cover-image-light.png");
-    --text-color-main: #353430;
-    --text-color-highlight: #353430;
-    --text-color-transparent: #353430;
-    --shadow: #FF0070;
-    --corner-color: #353430;
-    --highlighted-area: #FF8DCB;
-    --heading-color: #FFC2E6;
-/*    --line-height: 1.4625rem;*/
-    --border-style: 1px solid #353430;
-    --border-style__hover: 1px solid #32312D66;
+
+    --dark: #000028;
+    --dusk: #353430;
+    --light: #FFF1F7;
+    --bright: #FF0070;
+    --brightest: #FFC2E6;
+
+    --background: url('../images/cover-image-light.png');
+    --background-color: var(--light);
+
+    --highlight: var(--bright);
+    --heading-color: var(--brightest);
+    --highlighted-area: var(--brightest);
+    --text-color-highlight: var(--bright);
+
+    --text-color-main: var(--light);
+    --text-color-transparent: var(--dark);
+
+    --shadow: var(--brightest);
+
+    --corner-color: var(--dusk);
+
+    --border-style: var(--dusk);
+    --border-style__hover: var(--bright);
 }
 
-@media (prefers-color-scheme: light) {
+/*@media (prefers-color-scheme: light) {
     :root {
+        --background: var(--background, url('../images/cover-image-light.png'));
+        --background-color: var(--background-color, var(--dark));
+
+        --highlight: var(--highlight, var(--bright));
+        --heading-color: var(--heading-color, var(--brightest));
+        --highlighted-area: var(--highlighted-area, var(--bright));
+        --text-color-highlight: var(--text-color-highlight, var(--bright));
+
+        --text-color-main: var(--text-color-main, var(--light));
+        --text-color-transparent: var(--text-color-transparent, var(--dark));
+
+        --shadow: var(--shadow, var(--brightest));
+
+        --corner-color: var(--corner-color, var(--dusk));
+
+        --border-style: var(--border-style, 1px solid var(--dusk));
+        --border-style__hover: var(--border-style__hover, 1px solid var(--bright));
+    }
+!*    :root {
         --background-color: var(--background-color, #fff1f7);
         --background: var(--background, "../images/cover-image-light.png");
         --highlighted-area: var(--highlighted-area, #FF8DCB);
         --text-color-highlight: var(--text-color-highlight, #353430);
         --heading-color: var(--heading-color, #FFC2E6);
-/*        --line-height: var(--line-height, 1.4625rem);*/
+!*        --line-height: var(--line-height, 1.4625rem);*!
         --text-color-main: var(--text-color-main, #353430);
         --text-color-transparent: var(--text-color-transparent, #353430);
         --shadow: var(--shadow, #FF0070);
         --corner-color: var(--corner-color, #353430);
-/*        --font-size: 18px;*/
+!*        --font-size: 18px;*!
         --border-style: 1px solid #ff0070;
         --border-style__hover: 1px solid rgba(255, 0, 112, 0.4);
-    }
-}
+    }*!
+}*/
 

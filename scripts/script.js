@@ -7,6 +7,7 @@ themeButtons.forEach((button) => {
       btn.classList.remove('header__theme-menu-button_active');
       btn.removeAttribute('disabled');
     });
+
     if (
       [...button.classList].includes('header__theme-menu-button_type_light')
     ) {
@@ -31,6 +32,7 @@ function changeTheme(theme) {
 
 function initTheme() {
   const theme = localStorage.getItem('theme');
+
   if (theme) {
     changeTheme(theme);
     themeButtons.forEach((btn) => {

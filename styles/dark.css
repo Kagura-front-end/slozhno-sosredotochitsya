@@ -1,9 +1,11 @@
-/*
-  Основные цвета для темной темы
-  определяются в файле styles/colors.css
- */
-
 .page.theme_dark {
+
+    --dark: #000028;
+    --dusk: #353430;
+    --light: #F1B2CE;
+    --bright: #FF0070;
+    --brightest: #DB00FF;
+
     --background: '../images/cover-image-dark.png';
     --background-color: var(--dark);
 
@@ -22,26 +24,4 @@
     --border-style: var(--dusk);
     --border-style__hover: var(--bright);
 
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: var(--background, url('../images/cover-image-dark.png'));
-        --background-color: var(--background-color, var(--dark));
-
-        --highlight: var(--highlight, var(--bright));
-        --heading-color: var(--heading-color, var(--brightest));
-        --highlighted-area: var(--highlighted-area, var(--bright));
-        --text-color-highlight: var(--text-color-highlight, var(--bright));
-
-        --text-color-main: var(--text-color-main, var(--light));
-        --text-color-transparent: var(--text-color-transparent, var(--dark));
-
-        --shadow: var(--shadow, var(--brightest));
-
-        --corner-color: var(--corner-color, var(--dusk));
-
-        --border-style: var(--border-style, 1px solid var(--dusk));
-        --border-style__hover: var(--border-style__hover, 1px solid var(--bright));
-    }
 }

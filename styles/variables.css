@@ -1,9 +1,11 @@
 /*
  Универсальные переменные , не связанные с темами
  обяъвлены  просто в :root . Переключение тем эти
- значения не изменяет
+ значения не изменяет (кроме background)
  */
 :root {
+    --background: url('../images/cover-image.png');
+
     --line-height: 1.463rem;
     --line-height-titles: 25px;
 
@@ -27,30 +29,5 @@
 @media (min-width: 768px) {
     :root {
         --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    }
-}
-
-/*
-    Цветовая схема для темы по умолчанию.
- */
-@media (prefers-color-scheme: no-preference) {
-    :root {
-        --background: var(--background, url('../images/cover-image.png'));
-        --background-color: var(--background-color, var(--dark));
-
-        --highlight: var(--highlight, var(--bright));
-        --heading-color: var(--heading-color, var(--brightest));
-        --highlighted-area: var(--highlighted-area, var(--bright));
-        --text-color-highlight: var(--text-color-highlight, var(--bright));
-
-        --text-color-main: var(--text-color-main, var(--light));
-        --text-color-transparent: var(--text-color-transparent, var(--dark));
-
-        --shadow: var(--shadow, var(--bright));
-
-        --corner-color: var(--corner-color, var(--dusk));
-
-        --border-style: var(--border-style, 1px solid var(--dusk));
-        --border-style__hover: var(--border-style__hover, 1px solid var(--bright));
     }
 }
