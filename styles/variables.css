@@ -13,7 +13,7 @@
 
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 
-    --padding-desktop:20px;
+    --padding-desktop: 20px;
     --padding-mobile: 10px;
 
     --letter-spacing-condensed: -0.1rem;
@@ -26,7 +26,6 @@
     --rec-display: none;
     --rec-visibility: hidden;
 
-    color-scheme: dark;
 }
 
 .page.theme_auto {
@@ -34,7 +33,6 @@
     --border-style: var(--bright);
     --border-style__hover: var(--hover);
 }
-
 
 
 @media (min-width: 768px) {

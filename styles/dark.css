@@ -25,3 +25,9 @@
     --rec-visibility: visible;
 
 }
+@media (prefers-color-scheme: dark) {
+    .page.theme_auto {
+        --background: url('../images/cover-image-dark.png');
+        --background-color: var(--dark);
+    }
+}
