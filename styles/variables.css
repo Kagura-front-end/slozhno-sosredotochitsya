@@ -1,5 +1,5 @@
 :root {
-    --background: url('../images/cover-image.png') no-repeat scale;
+    --background: url('../images/cover-image.png');
     --hover: #FFFFFF;
     --bright: #FFFFFF;
 

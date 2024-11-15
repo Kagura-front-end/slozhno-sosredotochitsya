@@ -7,7 +7,7 @@
     --bright: #FF0070;
     --brightest: #DB00FF;
 
-    --background: '../images/cover-image-dark.png';
+    --background: url('../images/cover-image-dark.png');
     --background-color: var(--dark);
 
     --highlight: var(--bright);
