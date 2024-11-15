@@ -1,5 +1,4 @@
 
-/*
  @media (min-width: 375px) and (max-width: 767px) {
 
     .page {
@@ -121,18 +120,30 @@
         cursor: pointer;
     }
 
-    .rec-symbol {
-        position: absolute;
-        display: block;
-        top: 0;
-        right: 0;
-        margin: 10px;
-        font-size: 18px;
-        font-weight: bold;
-        color: var(--highlighted-area);
-    }
+     .rec-symbol {
+         position: absolute;
+         display: flex;
+         gap: 10px;
+         color: var(--highlight);
+         top: 10px;
+         right: 20px;
+         font-size: 18px;
+         grid-area: top-row;
+         justify-self: end;
+     }
 
-    .decorated-zone::before {
+     .rec-symbol::after {
+         content: "";
+         width: 10px;
+         height: 10px;
+         border-radius: 50%;
+         box-shadow: 0 0 4px 2px var(--highlighted-area);
+         background-color: var(--highlighted-area);
+         align-self: center;
+         justify-self: center;
+     }
+
+     .decorated-zone::before {
         content: "";
         position: absolute;
         top: 10px;
@@ -177,5 +188,3 @@
         object-fit: cover;
     }
 }
-
-*/
