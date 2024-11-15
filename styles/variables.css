@@ -25,6 +25,8 @@
 
     --rec-display: none;
     --rec-visibility: hidden;
+
+    color-scheme: dark;
 }
 
 .page.theme_auto {
