@@ -12,33 +12,6 @@
 
 }
 
-/* Decorated zone */
-.decorated-zone {
-    position: relative;
-}
-
-.decorated-zone::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    border-inline-end: 1px solid var(--corner-color);
-    border-block-start: 1px solid var(--corner-color);
-}
-
-.decorated-zone::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    border-inline-start: 1px solid var(--corner-color);
-    border-block-end: 1px solid var(--corner-color);
-}
-
 /* Header */
 .header {
     position: relative;
