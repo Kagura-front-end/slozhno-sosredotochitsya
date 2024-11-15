@@ -103,23 +103,10 @@ body {
         background-attachment: fixed;
     }
 }
-/*.header__theme-menu-button:focus {
-    border-bottom: 1px solid var(--border-style__hover);
-
-}
-
-.header__theme-menu-button:focus-visible {
-    border-bottom: 1px solid var(--border-style__hover);
-}*/
 
 .header__theme-menu-button_active {
     border: 1px solid var(--border-style);
 }
-
-
-
-/*    outline: var(--border-style);
-    outline-offset: 1px;*/
 
 
 /* Main */
