@@ -41,6 +41,10 @@
     }
 }
 
-
-
+@media (max-width: 374px) {
+    .rec-symbol {
+        display: var(--rec-display);
+        visibility: var(--rec-visibility);
+    }
+}
 
