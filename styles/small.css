@@ -1,14 +1,20 @@
 
- @media (min-width: 375px) and (max-width: 767px) {
+ @media (min-width: 375px) /* and (max-width: 767px)*/ {
 
     .page {
         max-width: 375px;
     }
 
     .header {
+        display: grid;
+        grid-template-rows: 1fr min-content 1fr;
         max-height: 668px;
         max-width: 375px;
         padding: 10px;
+        grid-template-areas:
+        "top-row"
+        "second-row"
+        "third-row";
     }
 
     .main {
@@ -28,9 +34,6 @@
     .header__title {
         align-self: center;
         width: 355px;
-        letter-spacing: 0.01em;
-        margin-bottom: 10px;
-        margin-top: -5px;
     }
 
     .title-question {
@@ -78,15 +81,19 @@
     }
 
     .header__theme-menu {
-        justify-self: end;
-        margin-block: 65px;
         color: var(--text-color-highlight);
+        align-self: end;
+        justify-self: end;
+        width: max-content;
+        grid-area: top-row;
+        margin-block: 65px;
     }
 
     .header__theme-menu-list {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        width: max-content;
     }
 
     .header__theme-menu-button {
@@ -122,24 +129,24 @@
      .rec-symbol {
          position: absolute;
          display: flex;
-         gap: 10px;
          color: var(--highlight);
+         right: 25px;
          top: 10px;
-         right: 20px;
          font-size: 18px;
-         grid-area: top-row;
          justify-self: end;
+         justify-content: end;
      }
 
      .rec-symbol::after {
+         position: relative;
          content: "";
          width: 10px;
          height: 10px;
          border-radius: 50%;
          box-shadow: 0 0 4px 2px var(--highlighted-area);
          background-color: var(--highlighted-area);
-         align-self: center;
-         justify-self: center;
+         left: 7px;
+         top: 7px;
      }
 
      .decorated-zone::before {
