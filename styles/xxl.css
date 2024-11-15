@@ -135,7 +135,6 @@
 
     .article-text {
         text-align: left;
-/*        width: 100%;*/
         font-weight: var(--font-weight-normal);
         padding-bottom: var(--padding-desktop);
     }
@@ -156,11 +155,10 @@
 
     .article-header {
         font-weight: var(--font-weight-bold);
-        letter-spacing: 0.01em;
     }
 
     .article-advices .article-text {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     .one-column {
@@ -197,7 +195,7 @@
     }
 
     .tips-container {
-        margin-top: 30px;
+        margin-top: var(--padding-mobile);
     }
 
 

@@ -22,7 +22,7 @@
 
     --shadow: var(--bright);
 
-    --corner-color: var(--dusk);
+    --corner-color: var(--bright);
 
     --border-style: var(--bright);
     --border-style__hover: var(--hover);
