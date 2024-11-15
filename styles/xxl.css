@@ -2,7 +2,6 @@
 
     .page {
         max-width: 1024px;
-     /*   padding: var(--padding-desktop);*/
     }
 
     .header {
@@ -111,8 +110,9 @@
     }
 
     .page-title {
-        /*line-height: 250px;*/
+        line-height: 250px;
         grid-area: second-row;
+        font-family: inherit;
     }
 
     .header__title {
