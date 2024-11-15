@@ -6,6 +6,7 @@
     --hover: #32312D66;
     --bright: #FF8DCB;
     --brightest: #FFC2E6;
+    --dark-bright: #FF0070;
 
     --background: url('../images/cover-image-light.png');
     --background-color: var(--light);
@@ -20,7 +21,7 @@
     --text-color-transparent: var(--dark);
     --text-button: var(--dusk);
 
-    --shadow: var(--bright);
+    --shadow: var(--dark-bright);
 
     --corner-color: var(--dusk);
 

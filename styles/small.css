@@ -1,5 +1,5 @@
 
- @media (min-width: 375px) and (max-width: 767px) {
+ @media (min-width: 375px)  and (max-width: 767px) {
 
     .page {
         max-width: 375px;
@@ -47,7 +47,7 @@
     }
 
     .dense-title, .golden-fish-question, .pictures__title {
-        margin-top: 50px;
+        margin-top: 51px;
     }
 
     .title-question, .dense-title, .golden-fish-question {
@@ -74,7 +74,7 @@
     }
 
     .pictures__title {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         margin-inline: 10px;
     }
 
@@ -199,4 +199,5 @@
         width: 100%;
         object-fit: cover;
     }
+
 }
