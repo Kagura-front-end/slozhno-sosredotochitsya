@@ -21,11 +21,7 @@ body {
 .page {
     margin: 0 auto;
     font-family: var(--font-family);
-    background-image: var(--background);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+
 }
 
 /* Decorated zone */
@@ -63,7 +59,11 @@ body {
     align-items: start;
     height: 100vh;
     color: var(--highlighted-area);
-    background: transparent;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 
 }
 
