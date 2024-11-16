@@ -1,6 +1,4 @@
-HTTPS: https://github.com/Kagura-front-end/Slozhno.git
-SSH: git@github.com:Kagura-front-end/Slozhno.git
-
+https://github.com/Kagura-front-end/slozhno-sosredotochitsya.git
 
 
 <!---
