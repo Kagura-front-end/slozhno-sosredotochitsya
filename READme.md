@@ -1,6 +1,3 @@
-HTTPS https://github.com/Kagura-front-end/Slozhno.git
+README.md
 
-
-xxl.css  файл с большим разрешением
-small файл с маленьким разрешением
-resolution_mid.css среднее разрешение
+https://github.com/Kagura-front-end/Slozhno.git 
