@@ -1,51 +1,45 @@
-/*
- Стили для среднего и большого экрана находятся в файлах
- styles/resolution_mid.css и styles/xxl.css
+/* Section 1, general styles */
 
- Стили для маленького разрешения -- в small.css
-
-
-*/
-
-/* Page */
 body {
     background-color: var(--background-color);
 }
+
 .page {
     margin: 0 auto;
     font-family: var(--font-family);
-    background-attachment: fixed
-
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* Decorated zone */
 .decorated-zone {
     position: relative;
 }
 
-.decorated-zone::before {
+.decorated-zone::before,
+.decorated-zone::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
     width: 25px;
     height: 25px;
+    border: 1px solid var(--corner-color);
+}
+
+.decorated-zone::before {
+    top: 0;
+    right: 0;
     border-inline-end: 1px solid var(--corner-color);
     border-block-start: 1px solid var(--corner-color);
 }
 
 .decorated-zone::after {
-    content: "";
-    position: absolute;
     bottom: 0;
     left: 0;
-    width: 25px;
-    height: 25px;
     border-inline-start: 1px solid var(--corner-color);
     border-block-end: 1px solid var(--corner-color);
 }
-
-/* Header */
 
 .header__theme-menu-button {
     width: 70px;
@@ -54,7 +48,6 @@ body {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 3px;
-/*    border-block-end: 1px solid transparent;*/
     color: var(--text-button);
     font-size: var(--font-size);
     line-height: 1em;
@@ -79,36 +72,11 @@ body {
     background: var(--highlighted-area);
 }
 
-.header__theme-menu-button:hover {
-    border-bottom: 1px solid var(--border-style__hover);
-
-    .header {
-        position: relative;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        align-items: start;
-        height: 100vh;
-        color: var(--highlighted-area);
-        background-image: var(--background);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-}
-
-.header__theme-menu-button_active {
-    border: 1px solid var(--border-style);
-}
-
-
-/* Main */
 .main a {
     border: 1px solid transparent;
     text-decoration: none;
     text-shadow: 1px 1px 0 var(--text-color-highlight);
 }
-
 
 .main a:hover {
     border-bottom: 1px solid currentColor;
@@ -119,12 +87,9 @@ body {
 }
 
 .main a:focus-visible {
-    border: 1px solid var(--text-color-main);
+    border: 1px solid currentColor;
 }
 
-
-
-/* Pictures */
 .pictures__title {
     color: var(--text-color-transparent);
     background-color: var(--highlighted-area);
@@ -138,8 +103,9 @@ body {
     object-fit: cover;
 }
 
-/* Footer */
 .footer {
+    height: 100vh;
+    min-height: 668px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
@@ -153,11 +119,165 @@ body {
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
     text-shadow: 2px 2px 0 var(--text-color-highlight);
-    letter-spacing: -0.02em;
 }
 
 .rec-symbol {
     display: var(--rec-display);
     visibility: var(--rec-visibility);
 }
+
+/* Section 2 small resolution */
+
+
+@media (425px < width <= 768px) {
+    .one-column {
+        max-width: 472px;
+    }
+}
+
+@media (width <= 767px) {
+    .page {
+        max-width: 375px;
+        min-width: 375px;
+    }
+
+    .header {
+        max-height: 668px;
+        max-width: 375px;
+        padding: 10px;
+        grid-template-areas:
+            "top-row"
+            "second-row"
+            "third-row";
+    }
+
+    .footer {
+        min-height: 668px;
+    }
+
+    .page-title {
+        font-size: var(--title-size);
+        line-height: 81%;
+        letter-spacing: -0.02em;
+        margin-top: 2px;
+    }
+
+    .header__title {
+        align-self: center;
+        width: 355px;
+    }
+
+    .title-question {
+        margin-top: 43px;
+    }
+
+    .dense-title,
+    .golden-fish-question,
+    .pictures__title {
+        margin-top: 50px;
+    }
+
+    .title-question,
+    .dense-title,
+    .golden-fish-question {
+        margin-bottom: 20px;
+    }
+
+    .footer__title {
+        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+        margin-top: 2px;
+        letter-spacing: 0.01em;
+    }
+
+    .pictures__title {
+        margin-bottom: 11px;
+        margin-inline: 10px;
+    }
+
+    main p {
+        font-size: var(--font-size);
+        font-weight: var(--font-weight-normal);
+        line-height: 1.463rem;
+        text-align: left;
+    }
+
+    .header__theme-menu {
+        margin-block: 65px;
+    }
+
+    .pictures__cards {
+        padding: 0 10px 40px 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .special-link {
+            border-bottom: 1px solid var(--light);
+        }
+    }
+
+
+    /* Section 3 resolution mid */
+
+    @media (width > 768px) {
+        .one-column {
+            max-width: 648px;
+        }
+    }
+
+    @media (768px <= width <= 1023px) {
+        .page {
+            max-width: 768px;
+        }
+
+        .header {
+            padding: var(--padding-desktop);
+            max-width: 1024px;
+        }
+
+        .rec-symbol {
+            top: 0;
+            right: 10px;
+        }
+
+        .decorated-zone::before {
+            top: 20px;
+            right: 20px;
+        }
+
+        .decorated-zone::after {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .header__theme-menu {
+            width: 230px;
+            margin-top: 70px;
+            max-width: 70px;
+        }
+
+        .header__title {
+            margin-bottom: 70px;
+            width: 364px;
+        }
+    }
+
+
+    /* Section 4 large resolution */
+    
+    @media (width > 1023px) {
+        .page {
+            max-width: 1024px;
+        }
+
+        .header {
+            grid-template-rows: 1fr min-content 1fr;
+        }
+
+        .footer {
+            height: 100vh;
+            min-height: 668px;
+        }
+    }
+
+
 
