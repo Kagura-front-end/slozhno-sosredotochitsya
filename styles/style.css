@@ -128,6 +128,11 @@ body {
     object-fit: cover;
 }
 
+.pictures__item {
+    display: grid;
+    align-items: stretch;
+}
+
 /* Footer */
 .footer {
     height: 100vh;
@@ -356,11 +361,6 @@ body {
         width: 100%;
         box-sizing: border-box;
         flex-wrap: wrap;
-    }
-
-    .pictures__list img {
-        width: 100%;
-        object-fit: cover;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -621,10 +621,6 @@ body {
         height: 318px;
     }
 
-    .pictures__list img {
-        width: 100%;
-    }
-
     .footer {
         height: 100vh;
         min-height: 668px;
@@ -864,10 +860,6 @@ body {
         grid-column-end: 4;
         height: 428px;
         margin-top: 5px;
-    }
-
-    .pictures__list img {
-        width: 100%;
     }
 
     .footer {
