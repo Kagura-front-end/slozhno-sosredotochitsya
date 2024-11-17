@@ -591,13 +591,13 @@ body {
         margin-bottom: 65px;
     }
 
-    .sunset {
+    .pictures__item:nth-of-type(1) {
         grid-column-start: 1;
         grid-column-end: 3;
         height: 192px;
     }
 
-    .ice-cream {
+    .pictures__item:nth-of-type(2) {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -605,20 +605,20 @@ body {
         height: 441px;
     }
 
-    .tape {
+    .pictures__item:nth-of-type(3) {
         grid-row-start: 2;
         grid-row-end: 4;
         height: 568px;
     }
 
-    .street {
+    .pictures__item:nth-of-type(4) {
+        height: 230px;
+    }
+
+    .pictures__item:nth-of-type(5) {
         grid-column-start: 2;
         grid-column-end: 4;
         height: 318px;
-    }
-
-    .books {
-        height: 230px;
     }
 
     .pictures__list img {
