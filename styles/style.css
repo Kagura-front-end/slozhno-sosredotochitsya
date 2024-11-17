@@ -138,7 +138,7 @@ body {
 
 
 @media (425px < width <= 768px) {
-    .one-column {
+    .main-text-content {
         max-width: 472px;
     }
 }
@@ -176,18 +176,7 @@ body {
     }
 
     .title-question {
-        margin-top: 43px;
-    }
-
-    .dense-title,
-    .golden-fish-question,
-    .pictures__title {
         margin-top: 50px;
-    }
-
-    .title-question,
-    .dense-title,
-    .golden-fish-question {
         margin-bottom: 20px;
     }
 
@@ -227,7 +216,7 @@ body {
     /* Section 3 resolution mid */
 
     @media (width > 768px) {
-        .one-column {
+        .main-text-content {
             max-width: 648px;
         }
     }
