@@ -127,6 +127,8 @@ body {
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
     text-shadow: 2px 2px 0 var(--text-color-highlight);
+    font-size: var(--title-size);
+    line-height: var(--line-height-titles);
 }
 
 .rec-symbol {
@@ -166,7 +168,6 @@ body {
     .page-title {
         font-size: var(--title-size);
         line-height: 81%;
-        letter-spacing: -0.02em;
         margin-top: 2px;
     }
 
@@ -181,7 +182,6 @@ body {
     }
 
     .footer__title {
-        font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
         margin-top: 2px;
         letter-spacing: 0.01em;
     }
