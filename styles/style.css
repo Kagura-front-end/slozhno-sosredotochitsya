@@ -78,6 +78,9 @@ body {
     text-shadow: 1px 1px 0 var(--text-color-highlight);
 }
 
+.header__theme-menu-button:hover {
+    border-bottom: 1px solid var(--border-style__hover);
+
 .main a:hover {
     border-bottom: 1px solid currentColor;
 }
