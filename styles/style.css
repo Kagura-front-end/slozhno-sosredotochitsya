@@ -506,10 +506,6 @@ p.article-text {
         width: 364px;
     }
 
-    p:not(.header__title) {
-        margin-bottom: 10px;
-    }
-
     .article-container p {
         text-align: left;
         font-weight: 400;
