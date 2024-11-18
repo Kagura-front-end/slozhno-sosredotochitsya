@@ -175,7 +175,6 @@ body {
     display: grid;
     grid-template-columns: auto 66%;
     align-items: start;
-    padding: var(--padding-desktop);
     padding-bottom: var(--padding-mobile);
 }
 /* Pictures */
@@ -511,7 +510,6 @@ p.article-text {
         font-weight: 400;
         padding-bottom: var(--padding-desktop);
         font-size: 18px;
-        letter-spacing: -0.009em;
     }
 
     .title-question {
@@ -651,6 +649,10 @@ p.article-text {
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 40px
+    }
+
+    .article-container {
+        padding: var(--padding-desktop);
     }
 
     .textblocks-container.title-question {
