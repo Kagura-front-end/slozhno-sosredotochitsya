@@ -53,21 +53,21 @@ a {
 }
 
 
-h2:not(.pictures__title):not(.footer__title) {
+/*h2:not(.pictures__title):not(.footer__title) {
     color: var(--article-header-color);
     font-size: var(--font-size);
     line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
     text-align: left;
-}
+}*/
 
-h3, h4 {
+/*h3, h4 {
     color: var(--text-color-transparent);
     background-color: var(--highlight);
     font-size: var(--font-size);
-   /* line-height: var(--line-height); */
+   !* line-height: var(--line-height); *!
     font-weight: var(--font-weight-bold);
-}
+}*/
 
 p {
     color: var(--text-color-main);

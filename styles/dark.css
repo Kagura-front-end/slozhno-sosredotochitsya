@@ -51,7 +51,5 @@
 
         --rec-visibility: visible;
     }
-    .special-link {
-        border-bottom: 1px solid var(--light);
-    }
+
 }
