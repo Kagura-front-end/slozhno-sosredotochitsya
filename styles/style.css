@@ -175,7 +175,6 @@ body {
     display: grid;
     grid-template-columns: auto 66%;
     align-items: start;
-    padding-bottom: var(--padding-mobile);
 }
 /* Pictures */
 .pictures__title {
@@ -503,6 +502,10 @@ p.article-text {
     .header__title {
         margin-bottom: 70px;
         width: 364px;
+    }
+
+    .article-container {
+        margin-inline: 20px;
     }
 
     .article-container p {
