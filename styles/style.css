@@ -427,17 +427,17 @@ p.article-text {
 
 @media (width > 1023px) { /* Resolution bigger than 1023px */
     .page {
-        width: clamp(1024px, 100vw, 1600px);
+        width: 1024px;
     }
 
     .header,
     .footer {
-        height: clamp(668px, 100vh, 768px);
-        width: clamp(768px, 100vw, 1024px);
+        height: 100vh;
+        min-height: 668px;
     }
 
     .header {
-        padding: var(--padding-desktop);
+        padding: 0;
     }
 
     .header__theme-menu {
@@ -451,6 +451,8 @@ p.article-text {
 
     .page-title {
         line-height: 8.096rem;
+        position: relative;
+        left: 0;
     }
 
     .header__title {
