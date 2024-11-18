@@ -166,7 +166,7 @@ body {
     width: 100%;
 }
 
-.article-container {
+.article-container, .tips-container {
     display: grid;
     grid-template-columns: auto 66%;
     align-items: start;
@@ -178,7 +178,6 @@ p:not(.header__title) {
     font-weight: var(--font-weight-normal);
     margin-bottom: 10px;
 }
-
 /* Pictures */
 .pictures__title {
     color: var(--text-color-transparent);
@@ -237,8 +236,8 @@ h2, h3, h4 {
     font-weight: var(--font-weight-bold);
 }
 
-.tips-container {
-    margin-top: var(--padding-mobile);
+.title-gap {
+    margin-top: var(--padding-desktop);
 }
 
 .article-header {
@@ -248,13 +247,20 @@ h2, h3, h4 {
 .article-text {
         text-align: left;
         font-weight: var(--font-weight-normal);
-        padding-bottom: var(--padding-mobile);
-        padding-top: var(--padding-mobile);
+}
+
+.article-container p {
+    padding-bottom: var(--padding-mobile);
+    padding-top: var(--padding-mobile);
+}
+
+.textblocks-container p {
+    padding-top: var(--padding-mobile);
 }
 
 .article-container:first-of-type {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 /* Footer */
@@ -406,10 +412,6 @@ h2, h3, h4 {
         padding-top: 40px;
     }
 
-    .tips-container p {
-        padding-top: 10px;
-    }
-
     .pictures__list {
         display: flex;
         flex-direction: column;
@@ -512,13 +514,7 @@ h2, h3, h4 {
     }
 
     p:not(.header__title) {
-        text-align: left;
-        font-weight: var(--font-weight-normal);
         margin-bottom: 10px;
-    }
-
-    p.article-text {
-        padding-bottom: 10px
     }
 
     .article-container p {
@@ -666,7 +662,10 @@ h2, h3, h4 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
         gap: 20px;
-        padding: var(--padding-desktop)
+        padding-top: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px
     }
 
     .textblocks-container.title-question {
