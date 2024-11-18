@@ -27,7 +27,6 @@ body {
     font-size: 18px;
     grid-area: top-row;
     justify-self: end;
-/*    justify-content: end;*/
 }
 
 .rec-symbol::after {
@@ -40,10 +39,6 @@ body {
     align-self: center;
     justify-self: center;
 }
-
-
-
-
 
 /* Header */
 
@@ -326,10 +321,6 @@ p.article-text {
     border-block-end: 1px solid var(--corner-color);
 }
 
-/*.footer.decorated-zone {
-    background-color: var(--background-color);
-}*/
-
 .rec-symbol {
     visibility: var(--rec-visibility);
 }
@@ -424,17 +415,11 @@ p.article-text {
         min-height: 1024px;
     }
 
-/*    .footer.decorated-zone {
-        background-color: var(--background-color);
-    }*/
-
     .footer__title {
         font-size: var(--title-size);
         line-height: 6.188rem;
     }
 }
-
-/* Section 4 big resolution */
 
 @media (width > 1023px) { /* Resolution bigger than 1023px */
     .page {
@@ -445,29 +430,6 @@ p.article-text {
     .header {
         min-height: 768px;
     }
-
-/*    .rec-symbol {
-        position: absolute;
-        display: flex;
-        gap: 10px;
-        color: var(--highlight);
-        top: 0;
-        right: 7px;
-        font-size: 18px;
-        grid-area: top-row;
-        justify-self: end;
-    }
-
-    .rec-symbol::after {
-        content: "";
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        box-shadow: 0 0 4px 2px var(--highlighted-area);
-        background-color: var(--highlighted-area);
-        align-self: center;
-        justify-self: center;
-    }*/
 
     .header__theme-menu {
         justify-self: center;
@@ -491,10 +453,6 @@ p.article-text {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
         gap: 20px;
-/*        padding-top: 0;
-        padding-right: 20px;
-        padding-left: 20px;
-        padding-bottom: 40px;*/
         padding: 0 20px 40px 20px;
     }
 
