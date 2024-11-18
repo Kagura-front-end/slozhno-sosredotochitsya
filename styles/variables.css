@@ -23,7 +23,6 @@
     --letter-spacing-large: 0.2rem;
     --letter-spacing-focus: 0.3rem;
 
-    --rec-display: none;
     --rec-visibility: hidden;
 
 }
@@ -35,15 +34,14 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 768px) { /* Title-size for resolution bigger than 768px */
     :root {
         --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 374px) { /* Rec-symbol visibility for resolution smaller than 375px */
     .rec-symbol {
-        display: var(--rec-display);
         visibility: var(--rec-visibility);
     }
 }

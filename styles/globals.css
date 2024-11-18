@@ -9,6 +9,7 @@ body {
     margin: 0 auto;
     overflow-y: auto;
     font-family:var(--font-family);
+    font-size: var(--font-size);
 
 }
 

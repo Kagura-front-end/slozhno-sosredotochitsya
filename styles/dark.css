@@ -21,11 +21,11 @@
     --corner-color: var(--bright);
     --border-style: var(--bright);
     --border-style__hover: var(--hover);
-    --rec-display: block;
+
     --rec-visibility: visible;
 
 }
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) { /* variables for dark mode and special link style */
     :root {
         --dark: #000028;
         --dusk: #353430;
@@ -48,7 +48,10 @@
         --corner-color: var(--bright);
         --border-style: var(--bright);
         --border-style__hover: var(--hover);
-        --rec-display: block;
+
         --rec-visibility: visible;
+    }
+    .special-link {
+        border-bottom: 1px solid var(--light);
     }
 }
