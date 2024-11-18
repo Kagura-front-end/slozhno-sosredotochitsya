@@ -1,0 +1,14 @@
+.focus-tips {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-right: var(--padding);
+    padding-left: var(--padding);
+}
+
+@media (width <= 425px) {
+    .focus-tips {
+        padding: var(--padding-mobile);
+        gap: 50px;
+    }
+}

@@ -1,0 +1,4 @@
+.card__item_iceCream {
+    grid-column: 3/3;
+    grid-row: 1/3;
+}

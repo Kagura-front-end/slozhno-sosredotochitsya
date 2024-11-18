@@ -1,0 +1,12 @@
+.footer {
+    padding: var(--padding);
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+@media (width <= 425px) {
+    .footer {
+        padding: var(--padding-mobile);
+    }
+}
