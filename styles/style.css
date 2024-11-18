@@ -55,6 +55,8 @@ body {
    "third-row";
     height: 100vh;
     color: var(--highlighted-area);
+    background-image: var(--background);
+    object-fit: fill;
 
 }
 
@@ -326,7 +328,6 @@ p.article-text {
     .footer {
         height: 100vh;
         min-height: 668px;
-        width: clamp(768px, 100vw, 1024px);
     }
 
     .special-link {
@@ -430,7 +431,6 @@ p.article-text {
     .header,
     .footer {
         height: clamp(668px, 100vh, 768px);
-        width: clamp(768px, 100vw, 1024px);
     }
 
     .header {
