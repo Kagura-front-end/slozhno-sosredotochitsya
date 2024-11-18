@@ -111,10 +111,10 @@ body {
     flex-direction: column;
     gap: var(--padding-mobile);
     width: max-content;
-    Grid-area: top row;
+    grid-area: top-row;
 }
 
-    }
+
 
 .header__theme-menu-button:hover {
     border-bottom: 1px solid var(--border-style__hover);
