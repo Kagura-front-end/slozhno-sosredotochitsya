@@ -441,7 +441,8 @@ h2, h3, h4 {
 
 
     .page {
-        max-width: 768px;
+        min-width: 768px;
+        max-width: 990px;
     }
 
     .main {

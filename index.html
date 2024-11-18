@@ -20,6 +20,16 @@
 <body class="page">
 <header class="header decorated-zone">
     <span class="rec-symbol" aria-hidden="true">REC</span>
+    <span style="position: absolute; top: 20px; left: 20px; color:currentColor;">
+        <script type="text/javascript">
+            const widthSpan = document.querySelector('span:nth-child(2)');
+            function writeWidth() {
+                widthSpan.textContent = `${window.innerWidth}px`;
+            }
+            window.addEventListener('resize', writeWidth);
+            writeWidth();
+        </script>
+    </span>
     <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
             <li class="header__theme-menu-item">
