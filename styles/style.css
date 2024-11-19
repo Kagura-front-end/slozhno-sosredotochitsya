@@ -45,8 +45,7 @@ body {
     position: relative;
     display: grid;
     padding: var(--padding-mobile);
-    /*grid-template-rows: 230px min-content 1fr;*/
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr min-content 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:
    "top-row"
