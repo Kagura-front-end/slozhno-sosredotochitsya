@@ -231,7 +231,7 @@ body {
     font-weight: var(--font-weight-bold);
     text-align: left;
   /*  margin-block: 50px 20px; */
-    margin-block-start: 35px;
+    margin-block-start: 30px;
     margin-inline: 10px;
 }
 
