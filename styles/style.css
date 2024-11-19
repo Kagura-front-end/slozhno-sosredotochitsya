@@ -85,7 +85,9 @@ body {
     flex-direction: column;
     gap: var(--padding-mobile);
     justify-self: end;
+    align-self: center;
     justify-content: center;
+    max-height: fit-content;
 }
 
 .header__theme-menu-button {
@@ -93,11 +95,8 @@ body {
     height: 26px;
     border: none;
     text-align: center;
-    padding-top: 0;
-    padding-bottom: 3px;
     color: var(--text-button);
     font-size: var(--font-size);
-    line-height: 1em;
     text-transform: lowercase;
     background-color: transparent;
     cursor: pointer;
@@ -108,7 +107,7 @@ body {
     font-weight: var(--font-weight-bold);
     font-size: var(--title-size);
     text-shadow: 4px 4px 0 var(--shadow);
-    line-height: 81.5%;
+    line-height: 5.98rem;
     grid-area: second-row;
 }
 
