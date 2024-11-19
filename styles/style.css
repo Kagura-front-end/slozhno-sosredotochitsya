@@ -108,7 +108,7 @@ body {
     font-weight: var(--font-weight-bold);
     font-size: var(--title-size);
     text-shadow: 4px 4px 0 var(--shadow);
-    line-height: 6.188rem;
+    line-height: 81.5%;
     grid-area: second-row;
 }
 
@@ -156,9 +156,12 @@ body {
 }
 
 .main a {
-    border: 1px solid transparent;
     text-decoration: none;
     text-shadow: 1px 1px 0 var(--text-color-highlight);
+}
+
+.special-link {
+    border-bottom: 1px solid var(--light);
 }
 
 .main a:hover {
@@ -185,10 +188,6 @@ body {
     grid-column: 2;
     width: 100%;
 
-}
-
-.special-link {
-    border-bottom: 1px solid var(--light);
 }
 
 .text-container-top {
