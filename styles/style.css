@@ -199,9 +199,8 @@ body {
 
 .text-container-top {
     /*margin-block-start: 40px;*/
-    margin-block-start: 30px;
+    padding: 40px 10px 0 10px;
   /*  padding: var(--padding-desktop);*/
-   padding: var(--padding-mobile);
     /*display: grid;
       align-items: start;
       grid-area: text-top;
@@ -211,7 +210,7 @@ body {
 .text-container-middle {
    /* display: grid;
     align-items: start; */
-    padding: 20px 10px 30px 10px;
+    padding: 30px 10px 30px 10px;
 }
 
 .text-container-bottom {
