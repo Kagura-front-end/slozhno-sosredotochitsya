@@ -86,7 +86,6 @@ body {
     gap: var(--padding-mobile);
     justify-self: end;
     align-self: center;
-    justify-content: center;
     max-height: fit-content;
 }
 
