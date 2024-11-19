@@ -45,7 +45,6 @@ body {
     position: relative;
     display: grid;
     padding: var(--padding-mobile);
-    /*grid-template-rows: 230px min-content 1fr;*/
     grid-template-rows: auto auto auto;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -201,7 +200,6 @@ body {
 
 .text-container-middle {
     display: grid;
-/*    align-items: start;*/
 }
 
 .text-container-bottom {
@@ -386,7 +384,7 @@ body {
     }
 
     .text-container-middle {
-        display: grid;
+/*        display: grid;*/
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: var(--padding-desktop);
