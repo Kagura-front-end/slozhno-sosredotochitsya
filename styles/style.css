@@ -106,7 +106,7 @@ body {
     font-weight: var(--font-weight-bold);
     font-size: var(--title-size);
     text-shadow: 4px 4px 0 var(--shadow);
-    line-height: 6rem;
+    line-height: var(--line-height-title);
     grid-area: second-row;
 }
 
@@ -302,6 +302,7 @@ body {
     font-weight: var(--font-weight-normal);
     padding-top: var(--padding-mobile);
     padding-bottom: var(--padding-desktop);
+    line-height: var(--line-height);
 }
 
 .text-container-bottom.article-text:last-of-type {
