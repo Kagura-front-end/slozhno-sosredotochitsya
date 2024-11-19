@@ -2,8 +2,6 @@ body {
     background-color: var(--background-color);
     font-family: var(--font-family);
     font-size: var(--font-size);
-    margin: 0 auto;
-    padding: 0;
 }
 
 .page {
@@ -11,6 +9,7 @@ body {
     background-image: var(--background);
     background-repeat: no-repeat;
     background-position: center;
+    /*  background-size: cover;*/
     background-size: cover;
     background-attachment: fixed;
 }
@@ -55,9 +54,6 @@ body {
    "third-row";
     height: 100vh;
     color: var(--highlighted-area);
-    background-image: var(--background);
-    object-fit: fill;
-
 }
 
 .header.decorated-zone::before {
@@ -79,7 +75,6 @@ body {
     border-inline-start: 1px solid var(--corner-color);
     border-block-end: 1px solid var(--corner-color);
 }
-
 
 .header__theme-menu {
     display: grid;
@@ -127,7 +122,6 @@ body {
     grid-area: third-row;
 }
 
-
 .header__theme-menu-button:hover {
     border-bottom: 1px solid var(--border-style__hover);
     outline-offset: 1px;
@@ -151,7 +145,15 @@ body {
 /* Main */
 
 .main {
-    background-color: var(--background-color);
+    display: grid;
+    gap: var(--padding-desktop);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "text-top"
+    "text-middle"
+    "text-bottom"
+    "pictures";
 }
 
 .main a {
@@ -173,12 +175,14 @@ body {
 }
 
 .title-question {
-    grid-column: 1 / 2;
+    grid-column: 1;
     font-weight: var(--font-weight-bold);
+    font-size: var(--font-size);
+    color: var(--bright);
 }
 
 .main-text-container {
-    grid-column: 2 / 3;
+    grid-column: 2;
     width: 100%;
 }
 
@@ -186,14 +190,26 @@ body {
     border-bottom: 1px solid var(--light);
 }
 
-.article-container, .tips-container {
+.text-container-top {
+    margin-block-start: 40px;
     display: grid;
-    grid-template-columns: auto 66%;
     align-items: start;
     padding: var(--padding-desktop);
-    padding-bottom: var(--padding-mobile);
+    grid-area: text-top;
 }
 
+.text-container-middle {
+    display: grid;
+    align-items: start;
+    margin-block-start: var(--padding-desktop);
+
+}
+
+.text-container-bottom {
+    display: grid;
+    padding: 0 var(--padding-desktop);
+    grid-area: text-bottom;
+}
 /* Pictures */
 .pictures__title {
     color: var(--text-color-transparent);
@@ -250,18 +266,23 @@ body {
 
 /* Other    */
 
-h2, h3, h4 {
+/*h2, h3, h4 {
     text-align: left;
     font-family: var(--font-family);
     font-weight: var(--font-weight-bold);
-}
+}*/
 
 .title-gap {
-    margin-top: var(--padding-desktop);
+font-size: var(--font-size);
+    color: var(--dark);
+    background-color: var(--bright);
 }
 
 .article-header {
     font-weight: var(--font-weight-bold);
+    font-size: var(--font-size);
+    color: var(--dark);
+    background-color: var(--article-header-color);
 }
 
 .article-text {
@@ -274,10 +295,10 @@ p.article-text {
     padding-bottom: var(--padding-desktop);
 }
 
-.article-container:first-of-type {
+/*.text-container-top:first-of-type {
     padding-top: 60px;
     padding-bottom: 60px;
-}
+}*/
 
 /* Footer */
 .footer {
@@ -322,12 +343,12 @@ p.article-text {
     visibility: var(--rec-visibility);
 }
 
-@media (width > 767px) { /* Resolution bigger than 768px */
-
+@media (width > 767px) {
+    /* Resolution bigger than 768px */
     .header,
     .footer {
         height: 100vh;
-        min-height: 668px;
+        min-height: 1024px;
     }
 
     .special-link {
@@ -335,7 +356,7 @@ p.article-text {
     }
 
     .main-text-container {
-        max-width: 648px;
+/*        max-width: 648px;*/
     }
 
     .page {
@@ -358,27 +379,40 @@ p.article-text {
     }
 
     .header__title {
-        margin-bottom: 70px;
         width: 364px;
     }
 
-    .article-container p {
-        text-align: left;
+    .text-container-top {
+        grid-template-columns: auto 65%;
+/*        text-align: left;
         font-weight: 400;
         padding-bottom: var(--padding-desktop);
-        font-size: 18px;
-        letter-spacing: -0.009em;
+        font-size: 18px;*/
     }
 
-    .title-question {
+    .text-container-top .title-question {
+        grid-column: 1;
+        grid-row: 1;
         width: 90%;
     }
 
-    .textblocks-container {
+    .text-container-middle {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
-        padding: var(--padding-desktop)
+        padding: var(--padding-desktop);
+        grid-area: text-middle;
+    }
+
+    .text-container-bottom {
+        grid-template-columns: 315px auto;
+        gap: 20px;
+        grid-area: text-bottom;
+    }
+
+    .column-right {
+        display: inline-grid;
+        grid-column: 2/3;
     }
 
     .text-card:nth-of-type(1) {
@@ -423,15 +457,19 @@ p.article-text {
     }
 }
 
-@media (width > 1023px) { /* Resolution bigger than 1023px */
+@media (width > 1023px) {
+    /* Resolution bigger than 1023px */
     .page {
-        width: 1024px;
+        /* width: 1024px; */
+        max-width: 1600px;
+        min-width: 1024px;
     }
 
-    .header,
-    .footer {
-        height: clamp(668px, 100vh, 768px);
+    .header, .footer {
+        height: 100vh;
+        min-height: 768px;
     }
+
 
     .header {
         padding: 20px;
@@ -455,7 +493,11 @@ p.article-text {
         width: 491px;
     }
 
-    .textblocks-container {
+    .text-container-top {
+        grid-template-columns: auto 66%;
+    }
+
+    .text-container-middle {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
@@ -463,9 +505,14 @@ p.article-text {
         padding: 0 20px 40px 20px;
     }
 
-    .textblocks-container.title-question {
+    .text-container-middle .title-question {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .text-container-bottom .title-question {
+        grid-column: 1;
+        grid-row: 1/5;
     }
 
     .text-card:nth-of-type(1) {
@@ -509,10 +556,12 @@ p.article-text {
     }
 }
 
-@media (width < 375px) { /* Rec-symbol visibility for resolution smaller than 375px */
+@media (width < 375px) {
+    /* Rec-symbol visibility for resolution smaller than 375px */
     .rec-symbol {
         visibility: var(--rec-visibility);
     }
+
     .header,
     .footer {
         width: clamp(375px, 100vw, 400px);
