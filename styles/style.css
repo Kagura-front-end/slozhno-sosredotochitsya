@@ -293,6 +293,9 @@ body {
     padding-bottom: var(--padding-desktop);
 }
 
+.text-container-bottom.article-text:last-of-type {
+    padding-bottom: var(--padding-mobile);
+}
 
 /* Footer */
 .footer {
