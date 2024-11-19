@@ -276,6 +276,7 @@ body {
     font-size: var(--font-size);
     color: var(--dark);
     background-color: var(--bright);
+    margin-bottom: var(--padding-desktop);
 }
 
 .article-header {
@@ -399,7 +400,8 @@ body {
 
     .text-container-bottom {
         grid-template-columns: 315px auto;
-        gap: 20px;
+        column-gap: var(--padding-desktop);
+        row-gap: 0;
         grid-area: text-bottom;
     }
 
