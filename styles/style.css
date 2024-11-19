@@ -296,11 +296,16 @@ body {
     margin-bottom: var(--padding-desktop);
 }
 
+
 .article-header {
     font-weight: var(--font-weight-bold);
     font-size: var(--font-size);
     color: var(--dark);
     background-color: var(--article-header-color);
+}
+
+.title-thin {
+    font-weight: var(--font-weight-normal);
 }
 
 .article-text {
