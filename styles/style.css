@@ -126,8 +126,9 @@ body {
 
 .header__theme-menu-button_active {
     border: 1px solid var(--border-style);
+    outline-offset: 1px;
     pointer-events: none;
-}
+]}
 
 .header__theme-menu-button:focus {
     outline: none;
@@ -180,6 +181,7 @@ body {
     font-size: var(--font-size);
     color: var(--bright);
     padding-bottom: 20px;
+    line-height: var(--line-height);
 }
 
 .main-text-container {
