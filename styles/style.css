@@ -400,10 +400,8 @@ body {
     .text-container-top {
         display: grid;
         grid-template-columns: auto 65%;
-        /*        text-align: left;
-                font-weight: 400;
-                padding-bottom: var(--padding-desktop);
-                font-size: 18px;*/
+        margin-block-start: calc(var(--padding-desktop) * 2);
+        padding: var(--padding-desktop);
     }
 
     .text-container-top .title-question {
@@ -414,10 +412,10 @@ body {
 
     .text-container-middle {
         display: grid;
+        margin-block-start: var(--padding-desktop);
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
         padding: var(--padding-desktop);
-        grid-area: text-middle;
     }
 
     .text-container-bottom {
@@ -513,18 +511,20 @@ body {
     }
 
     .text-container-top {
-        margin-block-start: calc(var(--padding-desktop) * 2);
+       /*** margin-block-start: calc(var(--padding-desktop) * 2); ***/
         grid-template-columns: auto 66%;
-        padding: var(--padding-desktop);
+        /*** padding: var(--padding-desktop); ***/
     }
 
+    /***
     .text-container-middle {
         display: grid;
-        margin-block-start: 20px;
+        !*** margin-block-start: 20px;***!
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto auto;
-        /*** padding: 22px 20px 20px 20px; ***/
+        !*** padding: 22px 20px 20px 20px; ***!
     }
+    ***/
 
     .text-container-middle .title-question {
         /*** grid-column: 1; ==already declared on line 186== ***/
