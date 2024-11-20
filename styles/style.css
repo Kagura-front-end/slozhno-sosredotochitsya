@@ -423,6 +423,7 @@ body {
 
     .text-container-bottom {
         display: grid;
+        margin-block-start: calc(var(--padding-desktop) * 2);
         padding: 0 var(--padding-desktop);
         grid-template-columns: 315px auto;
         column-gap: var(--padding-desktop);
@@ -556,11 +557,14 @@ body {
     }
 
     .pictures__title {
-        margin-inline: 20px
+        margin-inline: var(--padding-desktop);
+        margin-block: calc(var(--padding-desktop) * 3) var(--padding-desktop);
     }
 
     .pictures__list {
-        margin-inline: 20px;
+        padding: 0 var(--padding-desktop);
+        display: grid;
+        gap: var(--padding-desktop);
     }
 
     .pictures__item:nth-of-type(1) {
