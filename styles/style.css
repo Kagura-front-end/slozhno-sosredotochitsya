@@ -395,8 +395,8 @@ body {
     .text-container-top {
         display: grid;
         grid-template-columns: auto 65%;
-        margin-block-start: calc(var(--padding-desktop) * 2);
-        padding: var(--padding-desktop);
+        padding: 60px 20px 20px 20px;
+        margin-block-start: 0;
     }
 
     .text-container-top .title-question {
@@ -451,6 +451,7 @@ body {
         display: grid;
         gap: var(--padding-desktop);
         margin-block: 20px 30px;
+        background-color: var(--background-color);
     }
 
     .pictures-title {
@@ -478,7 +479,12 @@ body {
     }
 
     .footer.decorated-zone {
-        padding: var(--padding-desktop);
+        padding: 30px 20px 0 20px;
+        margin-top: 50px;
+    }
+
+    .pictures {
+        padding-bottom: 0;
     }
 
     .pictures-title {
@@ -610,11 +616,6 @@ body {
 
     .pictures__item:nth-of-type(5) {
         height: 428px;
-    }
-
-    .footer {
-        position: relative;
-        top: 31px;
     }
 }
 
