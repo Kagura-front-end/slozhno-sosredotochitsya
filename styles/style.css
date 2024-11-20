@@ -200,16 +200,8 @@ body {
 }
 
 .text-container-top {
-    /*margin-block-start: 40px;*/
     margin-block-start: 30px;
-    /*  padding: var(--padding-desktop);*/
     padding: var(--padding-mobile);
-    padding: 40px 10px 0 10px;
-  /*  padding: var(--padding-desktop);*/
-    /*display: grid;
-      align-items: start;
-      grid-area: text-top;
-     */
 }
 
 .text-container-middle {
