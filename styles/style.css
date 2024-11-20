@@ -586,6 +586,15 @@ body {
     .pictures__item:nth-of-type(5) {
         height: 428px;
     }
+
+    .footer {
+        position: relative;
+        top: 31px;
+    }
+
+    .footer.decorated-zone {
+        padding: var(--padding-desktop);    
+    }
 }
 
 @media (width < 375px) {
