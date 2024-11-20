@@ -349,9 +349,11 @@ body {
     border-block-end: 1px solid var(--corner-color);
 }
 
+/*
 .rec-symbol {
     visibility: var(--rec-visibility);
 }
+*/
 
 @media (width > 767px) {
     /* Resolution bigger than 768px */
