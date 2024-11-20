@@ -9,18 +9,9 @@
     --font-weight-normal: 400;
     --font-size: 18px;
     --font-family: 'IBM Plex Mono', system-ui, -apple-system, monospace, sans-serif;
-
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-
     --padding-desktop: 20px;
     --padding-mobile: 10px;
-
-    --letter-spacing-condensed: -0.1rem;
-    --letter-spacing-small: 0.052rem;
-    --letter-spacing-smallest: 0.0005em;
-    --letter-spacing-medium: 0.1rem;
-    --letter-spacing-large: 0.2rem;
-    --letter-spacing-focus: 0.3rem;
 
     --rec-visibility: hidden;
 
