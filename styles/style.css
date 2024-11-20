@@ -53,6 +53,7 @@ body {
    "second-row"
    "third-row";
     height: 100vh;
+    max-height: 668px;
     color: var(--highlighted-area);
 }
 
@@ -320,7 +321,7 @@ body {
 /* Footer */
 .footer {
     height: 100vh;
-    min-height: 668px;
+    max-height: 668px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
@@ -593,7 +594,7 @@ body {
     }
 
     .footer.decorated-zone {
-        padding: var(--padding-desktop);    
+        padding: var(--padding-desktop);
     }
 }
 
