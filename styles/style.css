@@ -52,6 +52,7 @@ body {
    "second-row"
    "third-row";
     height: 100vh;
+    max-height: 668px;
     color: var(--highlighted-area);
 }
 
@@ -323,7 +324,7 @@ body {
 /* Footer */
 .footer {
     height: 100vh;
-    min-height: 668px;
+    max-height: 668px;
     position: relative;
     display: grid;
     grid-template-rows: 1fr min-content 1fr;
@@ -336,7 +337,7 @@ body {
     justify-self: center;
     font-weight: var(--font-weight-bold);
     color: var(--heading-color);
-    text-shadow: 2px 2px 0 var(--text-color-highlight);
+    text-shadow: 2px 2px 0 var(--shadow);
     font-size: var(--title-size);
 }
 
