@@ -34,8 +34,8 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 4px 2px var(--highlighted-area);
-    background-color: var(--highlighted-area);
+    box-shadow: 0 0 4px 2px var(--highlight);
+    background-color: var(--highlight);
     align-self: center;
     justify-self: center;
 }
@@ -54,7 +54,7 @@ body {
    "third-row";
     height: 100vh;
     max-height: 668px;
-    color: var(--highlighted-area);
+    color: var(--highlight);
 }
 
 .footer.decorated-zone {
@@ -121,7 +121,7 @@ body {
 .header__title {
     color: var(--text-color-transparent);
     font-weight: 700;
-    background: var(--highlighted-area);
+    background: var(--highlight);
     align-self: center;
     justify-self: end;
     grid-area: third-row;
@@ -138,11 +138,7 @@ body {
     pointer-events: none;
 }
 
-.header__theme-menu-button:focus {
-    outline: none;
-    border-bottom: var(--border-style);
-}
-
+.header__theme-menu-button:focus,
 .header__theme-menu-button:focus-visible {
     outline: none;
     border-bottom: var(--border-style);
@@ -201,9 +197,7 @@ body {
 
 .text-container-top {
     /*margin-block-start: 40px;*/
-    margin-block-start: 30px;
     /*  padding: var(--padding-desktop);*/
-    padding: var(--padding-mobile);
     padding: 40px 10px 0 10px;
   /*  padding: var(--padding-desktop);*/
     /*display: grid;
@@ -228,7 +222,7 @@ body {
 /* Pictures */
 .pictures__title {
     color: var(--text-color-transparent);
-    background-color: var(--highlighted-area);
+    background-color: var(--highlight);
     font-size: var(--font-size);
     line-height: var(--line-height);
     font-weight: var(--font-weight-bold);
