@@ -232,11 +232,8 @@ body {
 }
 
 .pictures__list {
-    /*  display: grid;
-      grid-gap: var(--padding-desktop);
-      grid-template-columns: repeat(3, auto);
-      grid-template-rows: repeat(3, auto);*/
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     row-gap: 10px;
     padding: var(--padding-mobile);
