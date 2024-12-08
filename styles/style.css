@@ -493,10 +493,6 @@ body {
         padding-bottom: 0;
     }
 
-    .pictures-title {
-        margin-inline: 20px;
-    }
-
     .footer {
         min-height: 1024px;
         padding: var(--padding-desktop);
