@@ -12,7 +12,6 @@
     --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     --padding-desktop: 20px;
     --padding-mobile: 10px;
-
     --rec-visibility: hidden;
 
 }

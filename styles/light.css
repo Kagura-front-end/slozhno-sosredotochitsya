@@ -54,9 +54,6 @@
         --border-style: var(--dusk);
         --border-style__hover: var(--hover);
         --rec-visibility: hidden;
-
-        .title-question {
-            color: var(--dusk);
-        }
+        --title-question: var(--dusk);
     }
 }
